@@ -1,7 +1,35 @@
 body {
 	font-family: "Computer Modern Serif", serif;
+  	margin-top: 50px;
+  	margin-bottom: 100px;
+  	margin-right: 150px;
+  	margin-left: 150px;
+  	background-color: #002352;
+  	color: white;
+  	font-size: large;
+
 }
 
 .katex {
 	font-size: 1em !important;
 }
+
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: green;
+}
+
