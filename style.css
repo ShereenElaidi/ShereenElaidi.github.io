@@ -69,3 +69,9 @@ a:active {
   border-top: none;
 } 
 
+button {
+  font-family:
+  "Computer Modern Serif";
+  font-size: 16px;
+}
+
