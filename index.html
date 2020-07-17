@@ -32,22 +32,202 @@
     <h1> \(\mathbb{S}\)hereen's \(\mathcal{W}\)ebpage (under construction)</h1>
   </center>
   <h2>Introduction</h2>
-  Hello! My name is Shereen Elaidi, and I'm studying Mathematics at McGill University. My research interests are ergodic theory, PDEs, mathematical physics, and physics (especially black holes). This summer I'm solving the wave equation 
+  Hello! My name is Shereen Elaidi, and I'm studying Mathematics at McGill University. My academic interests are ergodic theory, PDEs, mathematical physics, and physics (especially black holes). This summer I'm solving the wave equation 
 
  \[ \Box u = - \frac{1}{S^2} \partial_\tau^2 u - 2 \frac{\dot{S}}{S^3} \partial_\tau u + \frac{1}{S^2} \Delta_\sigma u = 0 \]
 
   (where \( S \) depends on the <a href = "https://en.wikipedia.org/wiki/Friedmann%E2%80%93Lema%C3%AEtre%E2%80%93Robertson%E2%80%93Walker_metric">Friedmann-Robertson-Walker</a> metric) on various manifolds with random initial conditions. My personal interests include cycling, drawing, and reading.
 </body>
 
-<h2>Projects</h2>
-In progress: a hybrid of <a href="https://diegolopez.me/rosies-dream/">Rosie's Dream</a> and Anki -- <a href=" https://shereenelaidi.github.io/eigenlearn/">EigenLearn</a>. EigenLearn renders \( \LaTeX \) using <a href="https://github.com/gabrielamp/gabdown">gabdown</a>.  
+<h2>Webpage Content</h2>
 
+<!-- Tab Links for Projects --> 
+<div class="tab">
+  <button class="tablinks" onclick="openProject(event, 'Research')" id="defaultOpen">Research</button>
+  <button class="tablinks" onclick="openProject(event, 'EigenLearn')">EigenLearn</button>
+  <button class="tablinks" onclick="openProject(event, 'Links')">Links</button>
+  <button class="tablinks" onclick="openProject(event, 'Class Notes')">Class Notes & Expository Writing</button>
+  <button class="tablinks" onclick="openProject(event, 'Friends')">MTL Friends</button>
+  <button class="tablinks" onclick="openProject(event, 'CV')">CV</button>
+  <button class="tablinks" onclick="openProject(event, 'Physics')">Physics</button>
+</div>
 
-<h2>Friends</h2>
+<!-- Tab content -->
+<div id="Research" class="tabcontent">
+  <h3>Summer 2020</h3>
+  <p>
+  I'm solving the wave equation 
+
+ \[ \Box u = - \frac{1}{S^2} \partial_\tau^2 u - 2 \frac{\dot{S}}{S^3} \partial_\tau u + \frac{1}{S^2} \Delta_\sigma u = 0 \]
+
+  (where \( S \) depends on the <a href = "https://en.wikipedia.org/wiki/Friedmann%E2%80%93Lema%C3%AEtre%E2%80%93Robertson%E2%80%93Walker_metric">Friedmann-Robertson-Walker</a> metric) on various manifolds with random initial conditions. 
+</p>
+<h3>Summer 2019</h3>
+<p>Fibromyalgia...</p>
+<h3>Summer 2018</h3>
+<p>Exoplanets...</p>
+</div>
+<div id="Physics" class="tabcontent">
+  <h3>Physics</h3>
+  <p>I'm finally learning physics properly this summer, starting with U0 Physics (to prepare for classical mechanics in the Fall). I'm summarizing it here to keep track of things. This will be very boring for you if you have already taken U0 Physics (I'm following the ``University Physics'' textbook), so please ignore :)</p>
+  <center>
+  <h3>Chapter 2: Motion Along a Straight Line</h3>
+  </center>
+  <h4>2.1: One-Dimensional Motion with Constant Acceleration</h4>
+  <p>
+    <strong>Kinematics</strong> is the study of motion. Let \( x \) denote the position of a particle, \( x_0 \) denote the initial position, \(a \) denote the acceleration, \(v \) denote the velocity, and \(v_0\) denote the initial velocity. Then, we have the following <strong>Kinematic Equations</strong>, which describe the motion of a particle if we assume that the acceleration \( a \) is constant in time: 
+    \begin{align} v & = v_0 + a t \\
+     x & = x_0 + v_0 t + \frac{1}{2} xt^2 \\
+    v^2 & = v_0^2 + 2a(x-x_0)  \\
+    x-x_0 & = \frac{1}{2}(v_0 - v)t \end{align}
+  </p>
+
+  <h4>2.2: Freely-Falling Bodies</h4>
+  <strong>Free fall</strong> is an idealized motion where we ignore the affects of (a) air resistance and (b) the curvature of the Earth. Thus, it's only suitable when the distance of the fall is small compared with the radius of the Earth (which allows us to assume a roughly constant acceleration, and apply the equations from 2.1). The only modification we make here is that we fix \( a = 9.80 m/s^2 \), which is the value for the acceleration due to gravity of a freely-falling body on the surface of the Earth.
+
+  <h4>2.3: Velocity and Position by Integrating</h4>
+  How can we get equations describing the motion of a particle moving in a straight line if acceleration is not constant; i.e., we're given an acceleration function \( a(t) \)?
+
+  Let \( t_1 = 0 \) and let \( t_2 \) be some later time. We can obtain values for \( v(t) \) and \( x(t) \) for non-constant acceleration by integrating: 
+  \begin{align}
+  v(t) & = v_0 + \int_0^t a(s) ds \\
+  x(t) & = x_0 + \int_0^t v(s) ds
+  \end{align}
+
+  <center> <h3> Chapter 3: Motion in Two or Three Dimensions </h3> </center></center>
+  <h4>3.1: Position and Velocity Vectors</h4>
+  For notation, we denote the <strong>position vector</strong> by: 
+  \begin{align}
+    \mathbf{r} := x \hat{\mathbf{i}} + y \mathbf{\hat{j}} + z \mathbf{\hat{k}}
+  \end{align}
+  where \(\hat{\mathbf{i}} \), \(\hat{\mathbf{j}} \), and \(\hat{\mathbf{k}} \) are the standard basis vectors of \( \mathbb{R}^3 \)
+
+  <h4>3.2: The Acceleration Vector</h4>
+  The <strong>acceleration</strong> will describe changes in the velocity magnitude (speed) and changes in the direction of velocity. the acceleration vector \( \mathbf{a}(t) \) will be tangent to the path (and thus tangent to the velocity) \( \iff \) the particle is moving in a straight line.
+  <br> We can resolve the acceleration vector into its parallel (\(a_{\parallel} \)) and perpendicular (\( a_{\perp}\)) components. The parallel component tells us about changes in the speed. The perpendicular component tells us about changes in the particle's direction of motion. In its fullest generality, 
+
+  \begin{align}
+  a = a_{\parallel} + a_{\perp}
+  \end{align}
+
+  <h4>Projectile Motion</h4>
+  A <strong>projectile</strong> is a body that is given an initial velocity and then follows a path entirely determined by the affects of gravitational acceleration \( g \) and air resistance. We call the path followed by a projectile a <strong>trajectory</strong>.
+  <br>We study an idealized system where the projectile is represented as a particle with a constant acceleration due to gravity and where the effects of air resistance, curvature, and the rotation of the Earth are all neglected (for now). We specify an initial velocity by providing the initial magnitude (i.e., speed) [denoted by \( v_0 \)] and initial direction (denoted by \( \alpha_0 \)), which is the angle that the velocity vector makes with the \(x\)-axis. The equations of motion are hence given by:
+
+  \begin{align}
+    x(t) & = (v_{0} \cos(\alpha_0))t \\
+    y(t) & = (v_{0} \sin(\alpha_0))t - \frac{1}{2}gt^2 \\
+    v_x(t) &= v_0 \cos(\alpha_0) \\
+    v_y(t) &= v_0 \sin(\alpha_0) - gt 
+  \end{align}
+
+  From the above set of equations, we can obtain the following pieces of information:
+  <ul> 
+  <li> The distance \(r \) from the origin at any time \( t \): 
+    \begin{align}
+    r(t) = \sqrt{x(t)^2 + y(t)^2}
+    \end{align} 
+  </li>
+  <li> Projectile's speed at any time \( t \): 
+    \begin{align}
+      || v(t) || = \sqrt{v_x(t)^2 + v_y(t)^2}
+    \end{align}
+  </li>
+  <li> The direction (i..e, the angle \(\alpha \) the trajectory makes with the \(x\)-direction): 
+    \begin{align}
+      \tan(\alpha) = \frac{v_y}{v_x}
+    \end{align}
+  </li>
+</ul>
+Moreover, we can derive an equation for the shape of the trajectory in terms of \(x\) and \(y\) by eliminating \(t \). We'll obtain an expression of the form \( y = bx - cx^2 \) (i.e., a parabola). The expression is: 
+\begin{align}
+  y = ( \tan(\alpha_0))x - \frac{g}{2v_0^2 \cos (\alpha_0)} x^2 
+\end{align}
+</div>
+
+<div id="EigenLearn" class="tabcontent">
+  <h3>EigenLearn</h3>
+  <p>In progress: a hybrid of <a href="https://diegolopez.me/rosies-dream/">Rosie's Dream</a> and Anki -- <a href=" https://shereenelaidi.github.io/eigenlearn/">EigenLearn</a>. EigenLearn renders \( \LaTeX \) using <a href="https://github.com/gabrielamp/gabdown">gabdown</a>.  
+</p>
+</div>
+
+<div id="Links" class="tabcontent"> 
+  <h3>Links</h3>
+  <h4>Physics Links</h4>
+  <ul>
+    <li><a href="https://physics.stackexchange.com/questions/12175/book-recommendations">Book Recommendations</a></li>
+    <li><a href="https://home.cern/events">CERN On-line Events</a></li>
+    <li><a href="https://www.susanjfowler.com/blog/2016/8/13/so-you-want-to-learn-physics">So you want to learn physics...</a></li>
+    <li><a href="https://gravity-and-light.herokuapp.com/tutorials">Gravity School of Winter and Light</a></li>
+    <li><a href="https://www.feynmanlectures.caltech.edu/">Feynman Lectures in Physics</a></li>
+    <li><a href="http://www.fields.utoronto.ca/video-archive//event/356/2015">International Conference on Black Holes</a></li>
+    <li><a href="https://www.its.caltech.edu/~kip/index.html/biosketch.html">Kip Thorne</a></li>
+  </ul>
+  <h4>Math links</h4>
+  <ul>
+    <li><a href="https://people.utwente.nl/f.p.schuller?tab=about-me">F.P. Schulle's Webpage</a></li>
+  </ul>
+  <h4>Other</h4>
+  <ul>
+    <li><a href="https://fs.blog/2015/03/carol-dweck-mindset/">Growth mindset</a></li>
+  </ul>
+</div>
+
+<div id="Class Notes" class="tabcontent">
+  <h3>Class Notes</h3>
+  Here are some new and old LaTeXed class notes. I apologize in advance for all the typos, if you spot something don't hestitate to let me know! 
+  <ul>
+    <li>U0 Fall 2017</li>
+    <ul>
+      <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m141.pdf">Math 141: Calculus II</a></li>
+      <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m133.pdf">Math 133: Linear Algebra and Geometry</a></li> 
+    </ul>
+    <li>U0 Winter 2018</li>
+    <ul>
+      <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m222.pdf">Math 222: Calculus III</a></li>
+      <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m247.pdf">Math 247: Applied Linear Algebra</a></li>
+    </ul>
+    <li>U1 Fall 2018</li>
+      <ul>
+        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/calculus.pdf">Math 248: Vector Calculus (calculus document)</a></li>
+        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m254.pdf">Math 254: Analysis I</a></li>
+      </ul>
+    <li>U2 Fall 2019</li>
+      <ul>
+        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/math475/m475.pdf">Math 475: Partial Differential Equations</a></li>
+        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m454.pdf">Math 454: Analysis III</a></li>
+      </ul>
+    <li>U2 Winter 2020</li>
+      <ul>
+        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/math455/finalsummary.pdf">Math 455: Analysis IV</a></li>
+        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m458.pdf">Math 458: Differential Geometry</a></li>
+        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m357.pdf">Math 357: Statistics</a></li>
+      </ul>
+  </ul>
+  <h3>Expository Writing</h3>
+  <ul>
+    <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/physics-notes/ergodictheory1.pdf">A Very Brief Introduction to Ergodic Theory (December 2019)</a></li>
+    <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/physics-notes/lorentzian-causality-theory.pdf">Building up to Lorentzian Causality Theory (January 2020)</a></li>
+</div>
+
+<div id="Friends" class="tabcontent">
+<h2>MTL Friends</h2>
 <ul> 
   <li>Diego Lopez's <a href="https://diegolopez.me/">website</a></li>
   <li>Gabriela Moisescu's <a href="https://github.com/gabrielamp">GitHub</a></li>
   <li>Marcel Goh's <a href="https://marcelgoh.github.io/?fbclid=IwAR0NH_sPT8VgfjXU2MWiF31zmVInj6l37JQ_RqBunSGhwKZJXqJLKKJyq6Y">website</a></li>
+  <li>Viet Nguyen's <a href="https://opent03.github.io/">website</a></li>
 </ul>
+</div>
+<div id="CV" class="tabcontent">
+<h2>CV</h2>
+<p>coming soon...</p>
+</div>
+<script>
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>
+<p>Last updated: 17 July 2020 14:25 EST</p>
+
 
 </html>
