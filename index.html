@@ -112,7 +112,7 @@
   a = a_{\parallel} + a_{\perp}
   \end{align}
 
-  <h4>Projectile Motion</h4>
+  <h4>3.3: Projectile Motion</h4>
   A <strong>projectile</strong> is a body that is given an initial velocity and then follows a path entirely determined by the affects of gravitational acceleration \( g \) and air resistance. We call the path followed by a projectile a <strong>trajectory</strong>.
   <br>We study an idealized system where the projectile is represented as a particle with a constant acceleration due to gravity and where the effects of air resistance, curvature, and the rotation of the Earth are all neglected (for now). We specify an initial velocity by providing the initial magnitude (i.e., speed) [denoted by \( v_0 \)] and initial direction (denoted by \( \alpha_0 \)), which is the angle that the velocity vector makes with the \(x\)-axis. The equations of motion are hence given by:
 
@@ -154,8 +154,10 @@ Moreover, we can derive an equation for the shape of the trajectory in terms of 
 </div>
 
 <div id="Links" class="tabcontent"> 
-  <h3>Links</h3>
-  <h4>Physics Links</h4>
+  <center>
+  <h2>Links</h2>
+  </center>
+  <h3>Physics Links</h3>
   <ul>
     <li><a href="https://physics.stackexchange.com/questions/12175/book-recommendations">Book Recommendations</a></li>
     <li><a href="https://home.cern/events">CERN On-line Events</a></li>
@@ -163,20 +165,22 @@ Moreover, we can derive an equation for the shape of the trajectory in terms of 
     <li><a href="https://gravity-and-light.herokuapp.com/tutorials">Gravity School of Winter and Light</a></li>
     <li><a href="https://www.feynmanlectures.caltech.edu/">Feynman Lectures in Physics</a></li>
     <li><a href="http://www.fields.utoronto.ca/video-archive//event/356/2015">International Conference on Black Holes</a></li>
-    <li><a href="https://www.its.caltech.edu/~kip/index.html/biosketch.html">Kip Thorne</a></li>
+    <li><a href="https://www.its.caltech.edu/~kip/index.html/index.html">Kip Thorne</a></li>
   </ul>
-  <h4>Math links</h4>
+  <h3>Math Links</h3>
   <ul>
     <li><a href="https://people.utwente.nl/f.p.schuller?tab=about-me">F.P. Schulle's Webpage</a></li>
+    <li><a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3Blue1Brown</a></li>
   </ul>
-  <h4>Other</h4>
+  <h3>Other</h3>
   <ul>
     <li><a href="https://fs.blog/2015/03/carol-dweck-mindset/">Growth mindset</a></li>
+    <li>Study music: <a href="https://www.youtube.com/watch?v=kBH-dO68ooA">1</a>, <a href="https://www.youtube.com/watch?v=f0Cv4HZjL5w&list=RDf0Cv4HZjL5w&start_radio=1">2</a>, <a href="https://www.youtube.com/watch?v=Ti50KjZv-i8">3</a>, <a href="https://www.youtube.com/watch?v=ssAI-0KyTGc">4</a>
   </ul>
 </div>
 
 <div id="Class Notes" class="tabcontent">
-  <h3>Class Notes</h3>
+  <center><h3>Class Notes</h3></center>
   Here are some new and old LaTeXed class notes. I apologize in advance for all the typos, if you spot something don't hestitate to let me know! 
   <ul>
     <li>U0 Fall 2017</li>
@@ -208,8 +212,8 @@ Moreover, we can derive an equation for the shape of the trajectory in terms of 
   </ul>
   <h3>Expository Writing</h3>
   <ul>
-    <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/physics-notes/ergodictheory1.pdf">A Very Brief Introduction to Ergodic Theory (December 2019)</a></li>
-    <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/physics-notes/lorentzian-causality-theory.pdf">Building up to Lorentzian Causality Theory (January 2020)</a></li>
+    <li><a href="ergodictheory1.pdf">A Very Brief Introduction to Ergodic Theory (December 2019) [PDF]</a></li>
+    <li><a href="lorentzian-causality-theory.pdf">Building up to Lorentzian Causality Theory (January 2020) [PDF]</a></li>
 </div>
 
 <div id="Friends" class="tabcontent">
@@ -223,14 +227,16 @@ Moreover, we can derive an equation for the shape of the trajectory in terms of 
 </ul>
 </div>
 <div id="CV" class="tabcontent">
-<h2>CV</h2>
-<p>coming soon...</p>
+<p><iframe src="2020cv.pdf" width="100%" height="1000px">
+    </iframe></p>
 </div>
 <script>
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
 </script>
-<p>Last updated: 17 July 2020 17:41 EST</p>
+<p><span id="lastModified"></span></p>
 
-
+<script>
+document.getElementById("demo").innerHTML = document.lastModified;
+</script> 
 </html>
