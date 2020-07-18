@@ -1,14 +1,33 @@
-body {
+:root {
+  --margin-size: min(100px, 7.5vw);
+}
+
+
+body, html {
 	font-family: "Computer Modern Serif", serif;
-  	margin-top: 50px;
-  	margin-bottom: 100px;
-  	margin-right: 150px;
-  	margin-left: 150px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0; 
+    margin-bottom: 0;
   	background-color: #001838;
   	color: white;
   	font-size: large;
-
 }
+
+h1 {
+  margin-left: var(--margin-size);
+  margin-right: var(--margin-size);
+  margin-top: 1%; 
+  margin-bottom: 1%;  
+}
+
+p {
+  margin-left: var(--margin-size);
+  margin-right: var(--margin-size);
+  margin-top: 1%; 
+  margin-bottom: 1%;   
+}
+
 
 .katex {
 	font-size: 1em !important;
@@ -38,6 +57,10 @@ a:active {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
+  margin-left: var(--margin-size);
+  margin-right: var(--margin-size);
+  margin-top: 1%; 
+  margin-bottom: 0%;  
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -49,6 +72,7 @@ a:active {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+
 }
 
 /* Change background color of buttons on hover */
@@ -67,6 +91,10 @@ a:active {
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+  margin-left: var(--margin-size);
+  margin-right: var(--margin-size);
+  margin-top: 0%; 
+  margin-bottom: 1%;  
 } 
 
 button {
@@ -75,4 +103,61 @@ button {
   font-size: 16px;
   font-weight: bold;
 }
+
+ /* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 2cm;
+  margin: 0 auto; 
+} 
+
+.centered2 {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 1cm;
+  margin: 0 auto; 
+} 
+
 

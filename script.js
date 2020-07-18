@@ -63,6 +63,11 @@ window.onload = function() {
   }
   let year = lastMod.getFullYear();
   let hour = lastMod.getHours();
+  let strhour = hour.toString(); 
+  let numHour = Number(strhour); 
+  if (numHour < 10) {
+  	hour = "0" +numHour; 
+  }
   let minute = lastMod.getMinutes();
   let strMin = minute.toString(); 
   let numMin = Number(strMin); 
