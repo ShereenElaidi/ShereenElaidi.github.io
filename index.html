@@ -280,8 +280,29 @@ The <div class='dfn'>weight</div> of an object is the gravitational force exerte
 
 
 <div id="EigenLearn" class="tabcontent">
-  <h2>EigenLearn</h2>
-  In progress: a hybrid of <a href="https://diegolopez.me/rosies-dream/" target="_blank">Rosie's Dream</a> and Anki -- <a href=" https://shereenelaidi.github.io/eigenlearn/" target="_blank">EigenLearn</a>. EigenLearn renders \( \LaTeX \) using <a href="https://github.com/gabrielamp/gabdown" target="_blank">gabdown</a>.  
+  <h2>\(\mathbb{E}\text{igen}\mathcal{L}\text{earn}\)</h2>
+  In progress (v1.2.0): a hybrid of <a href="https://diegolopez.me/rosies-dream/" target="_blank">Rosie's Dream</a> and Anki -- <a href=" https://shereenelaidi.github.io/eigenlearn/" target="_blank">EigenLearn</a>. EigenLearn renders \( \LaTeX \) using <a href="https://github.com/gabrielamp/gabdown" target="_blank">gabdown</a>.  
+  <br>
+  <br>
+  How do you use this? When you open the link, there will be a sample set of questions written in gabdown. Unless you are on mobile, the default mode is ``edit'', which should look like this: 
+  <br>
+  <center>
+  <image src="ELedit.jpg" alt="el" class='center' style="width:600px;height:320px;">
+  </center>
+  <br>
+  Write your questions using gabdown (for documentation, see <a href="https://github.com/gabrielamp/gabdown" target="_blank">here</a>). To add a question, add the following code: 
+  <br>
+  <br>
+  <code>
+    &ltquestion-env&gt Precisely state the **Spectral Theorem for compact self-adjoint operators**.
+    &lt/question-env&gt
+  </code>
+  <br>
+  <br>
+  There are two other modes: you can view all the cards simultaneously using ``View all questions'' and you can take a quiz using ``Quizze Mode.'' 
+  <br>
+  <br> 
+  Ideas for v1.3.0+: We are looking to eventually incorporate some form of a spaced-repetition algorithm, allow users to upload their questions as gabdocs, and more. We also want to fix some UI issues, such as the arrows for quiz mode being visible on the edit and view cards modes.
 </div>
 
 <div id="Links" class="tabcontent"> 
