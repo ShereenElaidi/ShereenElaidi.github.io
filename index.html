@@ -38,15 +38,15 @@
   <img src="header.jpg" alt="sunrise" style="width:100%;">
   <div class="centered"><strong>\(\mathbb{S}\)hereen's \(\mathcal{W}\)ebpage</strong></div>
   <div class="centered2"><strong>(under contstruction)</strong></div>
-  <div class="bottom-right">Photo taken 15 July 2020 05:08</div>
+  <div class="bottom-right">Photo taken: 15 July 2020 05:08; Montréal, Québec </div>
 </div> 
   <h1>Introduction</h1>
   <p><img src="black_hole.jpg" alt="Black hole" style="float:right;width:250px;height:250px;">
-  Hello! My name is Shereen Elaidi, and I'm studying Mathematics at McGill University. My academic interests are ergodic theory, PDEs, mathematical physics, and physics (especially black holes). This summer I'm solving the wave equation 
+  Hello! My name is Shereen Elaidi, and I'm studying Mathematics at McGill University. My academic interests are ergodic theory, PDEs, mathematical physics, analysis, and physics (especially black holes). This summer I'm solving the wave equation 
 
  \[ \Box u = - \frac{1}{S^2} \partial_\tau^2 u - 2 \frac{\dot{S}}{S^3} \partial_\tau u + \frac{1}{S^2} \Delta_\sigma u = 0 \]
 
-  (where \( S \) depends on the <a href = "https://en.wikipedia.org/wiki/Friedmann%E2%80%93Lema%C3%AEtre%E2%80%93Robertson%E2%80%93Walker_metric">Friedmann-Robertson-Walker</a> metric) on various manifolds with random initial conditions. My personal interests include cycling, drawing, and reading.
+  (where \( S \) depends on the <a href = "https://en.wikipedia.org/wiki/Friedmann%E2%80%93Lema%C3%AEtre%E2%80%93Robertson%E2%80%93Walker_metric" target="_blank">Friedmann-Robertson-Walker</a> metric) on various manifolds with random initial conditions. My personal interests include cycling, drawing, and reading.
   </p>
 </body>
 <br>
@@ -59,6 +59,7 @@
   <button class="tablinks" onclick="openProject(event, 'Class Notes')">Class Notes & Expository Writing</button>
   <button class="tablinks" onclick="openProject(event, 'Friends')">MTL Friends</button>
   <button class="tablinks" onclick="openProject(event, 'CV')">CV</button>
+  <button class="tablinks" onclick="openProject(event, 'Sunrises & Art')">Sunrises & Art</button>
   <button class="tablinks" onclick="openProject(event, 'Physics')">Physics</button>
 </div>
 
@@ -69,7 +70,7 @@
 
  \[ \Box u = - \frac{1}{S^2} \partial_\tau^2 u - 2 \frac{\dot{S}}{S^3} \partial_\tau u + \frac{1}{S^2} \Delta_\sigma u = 0 \]
 
-  (where \( S \) depends on the <a href = "https://en.wikipedia.org/wiki/Friedmann%E2%80%93Lema%C3%AEtre%E2%80%93Robertson%E2%80%93Walker_metric">Friedmann-Robertson-Walker</a> metric) on various manifolds with random initial conditions. 
+  (where \( S \) depends on the <a href = "https://en.wikipedia.org/wiki/Friedmann%E2%80%93Lema%C3%AEtre%E2%80%93Robertson%E2%80%93Walker_metric" target="_blank">Friedmann-Robertson-Walker</a> metric) on various manifolds with random initial conditions. 
 <h2>Summer 2019</h2>
 Fibromyalgia...
 <h2>Summer 2018</h2>
@@ -77,22 +78,22 @@ Exoplanets...
 </div>
 <div id="Physics" class="tabcontent">
   <h2>Physics</h2>
-  I'm finally learning physics properly this summer, starting with U0 Physics (to prepare for classical mechanics in the Fall). I'm summarizing it here to keep track of things. This will be very boring for you if you have already taken U0 Physics (I'm following the ``University Physics'' <a href="https://www.amazon.ca/University-Physics-Modern-14th/dp/0321973615">textbook</a>), so please ignore and please don't laugh, I haven't taken a physics class since High School :)</p>
+  I'm finally learning physics properly this summer, starting with U0 Physics (to prepare for classical mechanics in the Fall). I'm summarizing it here to keep track of things. This will be very boring for you if you have already taken U0 Physics (I'm working through the ``University Physics'' <a href="https://www.amazon.ca/University-Physics-Modern-14th/dp/0321973615" target="_blank">textbook</a>), so please ignore and please don't laugh, I haven't taken a physics class since High School :)</p>
   <center>
-  <h3>Chapter 2: Motion Along a Straight Line</h3>
+  <div class="chapter">Chapter 2: Motion Along a Straight Line</div>
   </center>
-  <h4>2.1: One-Dimensional Motion with Constant Acceleration</h4>
+  <div class="subsection">2.1: One-Dimensional Motion with Constant Acceleration</div>
   
-    <strong>Kinematics</strong> is the study of motion. Let \( x \) denote the position of a particle, \( x_0 \) denote the initial position, \(a \) denote the acceleration, \(v \) denote the velocity, and \(v_0\) denote the initial velocity. Then, we have the following <strong>Kinematic Equations</strong>, which describe the motion of a particle if we assume that the acceleration \( a \) is constant in time: 
+    <div class="dfn">Kinematics</div> is the study of motion. Let \( x \) denote the position of a particle, \( x_0 \) denote the initial position, \(a \) denote the acceleration, \(v \) denote the velocity, and \(v_0\) denote the initial velocity. Then, we have the following <div class="dfn">Kinematic Equations</div>, which describe the motion of a particle if we assume that the acceleration \( a \) is constant in time: 
     \begin{align} v & = v_0 + a t \\
      x & = x_0 + v_0 t + \frac{1}{2} at^2 \\
     v^2 & = v_0^2 + 2a(x-x_0)  \\
     x-x_0 & = \frac{1}{2}(v_0 - v)t \end{align}
 
-  <h4>2.2: Freely-Falling Bodies</h4>
-  <strong>Free fall</strong> is an idealized motion where we ignore the affects of (a) air resistance and (b) the curvature of the Earth. Thus, it's only suitable when the distance of the fall is small compared with the radius of the Earth (which allows us to assume a roughly constant acceleration, and apply the equations from 2.1). The only modification we make here is that we fix \( a = 9.80 m/s^2 \), which is the value for the acceleration due to gravity of a freely-falling body on the surface of the Earth.
+  <div class="subsection">2.2: Freely-Falling Bodies</div>
+  <div class="dfn">Free fall</div> is an idealized motion where we ignore the affects of (a) air resistance and (b) the curvature of the Earth. Thus, it's only suitable when the distance of the fall is small compared with the radius of the Earth (which allows us to assume a roughly constant acceleration, and apply the equations from 2.1). The only modification we make here is that we fix \( a = 9.80 m/s^2 \), which is the value for the acceleration due to gravity of a freely-falling body on the surface of the Earth.
 
-  <h4>2.3: Velocity and Position by Integrating</h4>
+  <div class="subsection">2.3: Velocity and Position by Integrating</div>
   How can we get equations describing the motion of a particle moving in a straight line if acceleration is not constant; i.e., we're given an acceleration function \( a(t) \)?
 
   Let \( t_1 = 0 \) and let \( t_2 \) be some later time. We can obtain values for \( v(t) \) and \( x(t) \) for non-constant acceleration by integrating: 
@@ -102,23 +103,23 @@ Exoplanets...
   \end{align}
 
   <center> <h3> Chapter 3: Motion in Two or Three Dimensions </h3> </center></center>
-  <h4>3.1: Position and Velocity Vectors</h4>
-  For notation, we denote the <strong>position vector</strong> by: 
+  <div class="subsection">3.1: Position and Velocity Vectors</div>
+  For notation, we denote the <div class="dfn">position vector</div> by: 
   \begin{align}
     \mathbf{r} := x \hat{\mathbf{i}} + y \mathbf{\hat{j}} + z \mathbf{\hat{k}}
   \end{align}
   where \(\hat{\mathbf{i}} \), \(\hat{\mathbf{j}} \), and \(\hat{\mathbf{k}} \) are the standard basis vectors of \( \mathbb{R}^3 \)
 
-  <h4>3.2: The Acceleration Vector</h4>
-  The <strong>acceleration</strong> will describe changes in the velocity magnitude (speed) and changes in the direction of velocity. the acceleration vector \( \mathbf{a}(t) \) will be tangent to the path (and thus tangent to the velocity) \( \iff \) the particle is moving in a straight line.
+  <div class="subsection">3.2: The Acceleration Vector</div>
+  The <div class="dfn">acceleration</div> will describe changes in the velocity magnitude (speed) and changes in the direction of velocity. the acceleration vector \( \mathbf{a}(t) \) will be tangent to the path (and thus tangent to the velocity) \( \iff \) the particle is moving in a straight line.
   <br> We can resolve the acceleration vector into its parallel (\(a_{\parallel} \)) and perpendicular (\( a_{\perp}\)) components. The parallel component tells us about changes in the speed. The perpendicular component tells us about changes in the particle's direction of motion. In its fullest generality, 
 
   \begin{align}
   a = a_{\parallel} + a_{\perp}
   \end{align}
 
-  <h4>3.3: Projectile Motion</h4>
-  A <strong>projectile</strong> is a body that is given an initial velocity and then follows a path entirely determined by the affects of gravitational acceleration \( g \) and air resistance. We call the path followed by a projectile a <strong>trajectory</strong>.
+  <div class="subsection">3.3: Projectile Motion</div>
+  A <div class="dfn">projectile</div> is a body that is given an initial velocity and then follows a path entirely determined by the affects of gravitational acceleration \( g \) and air resistance. We call the path followed by a projectile a <div class="dfn">trajectory</div>.
   <br>We study an idealized system where the projectile is represented as a particle with a constant acceleration due to gravity and where the effects of air resistance, curvature, and the rotation of the Earth are all neglected (for now). We specify an initial velocity by providing the initial magnitude (i.e., speed) [denoted by \( v_0 \)] and initial direction (denoted by \( \alpha_0 \)), which is the angle that the velocity vector makes with the \(x\)-axis. The equations of motion are hence given by:
 
   \begin{align}
@@ -150,11 +151,54 @@ Moreover, we can derive an equation for the shape of the trajectory in terms of 
 \begin{align}
   y = ( \tan(\alpha_0))x - \frac{g}{2v_0^2 \cos (\alpha_0)} x^2 
 \end{align}
+<div class="subsection">3.4: Motion in a Circle</div>
+<div class="subsubsection">3.4.1: Uniform Circular Motion</div>
+<div class="dfn">Uniform circular motion</div> is when a particle moves in a circle with a constant speed. Hence, the acceleration vector will be perpendicular to the path, and also directed inward. The magnitude of the acceleration, \( a_{\text{rad}} \), is given by: 
+\begin{align}
+  a_{\text{rad}} = \frac{v^2}{R}
+\end{align}
+We can also call this acceleration due to uniform circular motion <div class="dfn">centriptal acceleration</div>. We define the <div class="dfn">period</div> of a motion to the time it takes for one revolution to occur. We can re-write the centripital acceleration in terms of the period: 
+\begin{align}
+  a_{\text{rad}} = \frac{4 \pi^2 R}{T^2}
+\end{align}
+<div class="subsubsection">3.4.2: Non-uniform circular motion</div>
+If the speed varies, then acceleration will also have a tangential component: 
+\begin{align}
+\mathbf{a} = a_{\text{rad}} + a_{\text{tan}} = \frac{d || \mathbf{v} ||}{dt} + \frac{v^2}{R}
+\end{align}
+
+<div class="subsection">3.5: Relative Velocity</div>
+The <div class="dfn">relative velocity</div> is the velocity of a particular observer relative to that observer. 
+<h5>3.5.1: Relative Velocity in One Direction</h5>
+A <div class="dfn">Frame of Reference</div> is an observer equipped with a meter-stick and stop-watch. Notation: let \( P \) be a point, and let \( A \) and \( B \) be reference frames. Then, \( x_{P/A} \) will denote the position of \( P \) relative to the reference frame \( A \). Moreover, the position of the origin of \( B \) with respect to the origin of \( A \) is \( x_{B/A} \). We thus have:
+\begin{align}
+  x_{P / A} & = x_{P / B} + x_{B/A} \\
+  v_{P/A} & = v_{P / B} + v_{B/A}
+\end{align}
+
+<div class="subsection">3.5.2: Relative Velocity in Two or Three Dimensions</div>
+It's exactly what we would expect. Let \( \mathbf{r} \) denote the position vector. Then:
+\begin{align}
+  \mathbf{r}_{P/A} & = \mathbf{r}_{P/B} + \mathbf{r}_{B/A} \\
+  \mathbf{v}_{P/A} & = \mathbf{v}_{P/B} + \mathbf{v}_{B/A}
+\end{align}
+We call the above transformation the <div class="dfn">Galilean Velocity Transformation</div>. We also have the general rule that for all reference frames \( A \) and \( B \), 
+\begin{align}
+  \mathbf{v}_{A/B} = - \mathbf{v}_{B / A}
+\end{align}
+
+<div class="chapter">Chapter 4: Newton's Laws of Motion</div>
+<div class="subsection">4.1: Newton's First Law</div>
+<div class="subsubsection">4.1.1: Test </div>
+
 </div>
+
+
+
 
 <div id="EigenLearn" class="tabcontent">
   <h2>EigenLearn</h2>
-  In progress: a hybrid of <a href="https://diegolopez.me/rosies-dream/">Rosie's Dream</a> and Anki -- <a href=" https://shereenelaidi.github.io/eigenlearn/">EigenLearn</a>. EigenLearn renders \( \LaTeX \) using <a href="https://github.com/gabrielamp/gabdown">gabdown</a>.  
+  In progress: a hybrid of <a href="https://diegolopez.me/rosies-dream/" target="_blank">Rosie's Dream</a> and Anki -- <a href=" https://shereenelaidi.github.io/eigenlearn/" target="_blank">EigenLearn</a>. EigenLearn renders \( \LaTeX \) using <a href="https://github.com/gabrielamp/gabdown" target="_blank">gabdown</a>.  
 </div>
 
 <div id="Links" class="tabcontent"> 
@@ -163,24 +207,26 @@ Moreover, we can derive an equation for the shape of the trajectory in terms of 
   </center>
   <h3>Physics Links</h3>
   <ul>
-    <li><a href="https://physics.stackexchange.com/questions/12175/book-recommendations">Book Recommendations</a></li>
-    <li><a href="https://home.cern/events">CERN On-line Events</a></li>
-    <li><a href="https://www.susanjfowler.com/blog/2016/8/13/so-you-want-to-learn-physics">So you want to learn physics...</a></li>
-    <li><a href="https://gravity-and-light.herokuapp.com/tutorials">Gravity School of Winter and Light</a></li>
-    <li><a href="https://www.feynmanlectures.caltech.edu/">Feynman Lectures in Physics</a></li>
-    <li><a href="http://www.fields.utoronto.ca/video-archive//event/356/2015">International Conference on Black Holes</a></li>
-    <li><a href="https://www.its.caltech.edu/~kip/index.html/index.html">Kip Thorne</a></li>
-    <li><a href="https://www.nasa.gov/">N.A.S.A.</a></li>
+    <li><a href="https://docs.google.com/document/d/17xh6rPdPYC2xI8xNvaeaabJCVIcvKvZKdl2gbsWJjPA/edit?usp=sharing" target="_blank">Physics resource master-sheet</a></li>
+    <li><a href="https://physics.stackexchange.com/questions/12175/book-recommendations" target="_blank">Book Recommendations</a></li>
+    <li><a href="https://home.cern/events" target="_blank">CERN On-line Events</a></li>
+    <li><a href="https://www.susanjfowler.com/blog/2016/8/13/so-you-want-to-learn-physics" target="_blank">So you want to learn physics...</a></li>
+    <li><a href="https://gravity-and-light.herokuapp.com/tutorials" target="_blank">Gravity School of Winter and Light</a></li>
+    <li><a href="https://www.feynmanlectures.caltech.edu/" target="_blank">Feynman Lectures on Physics</a></li>
+    <li><a href="http://www.fields.utoronto.ca/video-archive//event/356/2015" target="_blank">International Conference on Black Holes</a></li>
+    <li><a href="https://www.its.caltech.edu/~kip/index.html/index.html" target="_blank">Kip Thorne</a></li>
+    <li><a href="https://www.nasa.gov/" target="_blank">N.A.S.A.</a></li>
   </ul>
   <h3>Math Links</h3>
   <ul>
-    <li><a href="https://people.utwente.nl/f.p.schuller?tab=about-me">F.P. Schulle's Webpage</a></li>
-    <li><a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3Blue1Brown</a></li>
+    <li><a href="https://docs.google.com/document/d/1X1L3LKBzC58s_eCpVpYzq-vZGCHhCahP5Wei5-g1kvs/edit?usp=sharing" target="_blank">Math resource master-sheet</a></li>
+    <li><a href="https://people.utwente.nl/f.p.schuller?tab=about-me" target="_blank">F.P. Schulle's Webpage</a></li>
+    <li><a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw" target="_blank">3Blue1Brown</a></li>
   </ul>
   <h3>Other</h3>
   <ul>
-    <li><a href="https://fs.blog/2015/03/carol-dweck-mindset/">Growth mindset</a></li>
-    <li>Study music: <a href="https://www.youtube.com/watch?v=kBH-dO68ooA">1</a>, <a href="https://www.youtube.com/watch?v=f0Cv4HZjL5w&list=RDf0Cv4HZjL5w&start_radio=1">2</a>, <a href="https://www.youtube.com/watch?v=Ti50KjZv-i8">3</a>, <a href="https://www.youtube.com/watch?v=ssAI-0KyTGc">4</a>
+    <li><a href="https://fs.blog/2015/03/carol-dweck-mindset/" target="_blank">Growth mindset</a></li>
+    <li>Study music: <a href="https://www.youtube.com/watch?v=kBH-dO68ooA" target="_blank">1</a>, <a href="https://www.youtube.com/watch?v=f0Cv4HZjL5w&list=RDf0Cv4HZjL5w&start_radio=1" target="_blank">2</a>, <a href="https://www.youtube.com/watch?v=Ti50KjZv-i8" target="_blank">3</a>, <a href="https://www.youtube.com/watch?v=ssAI-0KyTGc"target="_blank">4</a>, <a href="https://www.youtube.com/watch?v=LUCKpJEUcNQ&fbclid=IwAR3CDDCbrrJww3THDiAxfJBFqddhhB1pt4pWtz1HevxPqNDsMMdHFhmhHts" target="_blank">5</a>, <a href="https://www.youtube.com/watch?v=W2an9rBP0XM&list=RDLUCKpJEUcNQ&index=2" target="_blank">6</a></li>
   </ul>
 </div>
 
@@ -190,29 +236,29 @@ Moreover, we can derive an equation for the shape of the trajectory in terms of 
   <ul>
     <li>U0 Fall 2017</li>
     <ul>
-      <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m141.pdf">Math 141: Calculus II</a></li>
-      <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m133.pdf">Math 133: Linear Algebra and Geometry</a></li> 
+      <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m141.pdf" target="_blank">Math 141: Calculus II</a></li>
+      <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m133.pdf" target="_blank">Math 133: Linear Algebra and Geometry</a></li> 
     </ul>
     <li>U0 Winter 2018</li>
     <ul>
-      <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m222.pdf">Math 222: Calculus III</a></li>
-      <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m247.pdf">Math 247: Applied Linear Algebra</a></li>
+      <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m222.pdf" target="_blank">Math 222: Calculus III</a></li>
+      <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m247.pdf" target="_blank">Math 247: Applied Linear Algebra</a></li>
     </ul>
     <li>U1 Fall 2018</li>
       <ul>
-        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/calculus.pdf">Math 248: Vector Calculus (calculus document)</a></li>
-        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m254.pdf">Math 254: Analysis I</a></li>
+        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/calculus.pdf" target="_blank">Math 248: Vector Calculus (calculus document)</a></li>
+        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m254.pdf" target="_blank">Math 254: Analysis I</a></li>
       </ul>
     <li>U2 Fall 2019</li>
       <ul>
-        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/math475/m475.pdf">Math 475: Partial Differential Equations</a></li>
-        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m454.pdf">Math 454: Analysis III</a></li>
+        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/math475/m475.pdf" target="_blank">Math 475: Partial Differential Equations</a></li>
+        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m454.pdf" target="_blank">Math 454: Analysis III</a></li>
       </ul>
     <li>U2 Winter 2020</li>
       <ul>
-        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/math455/finalsummary.pdf">Math 455: Analysis IV</a></li>
-        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m458.pdf">Math 458: Differential Geometry</a></li>
-        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m357.pdf">Math 357: Statistics</a></li>
+        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/math455/finalsummary.pdf" target="_blank">Math 455: Analysis IV</a></li>
+        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m458.pdf" target="_blank">Math 458: Differential Geometry</a></li>
+        <li><a href="https://github.com/ShereenElaidi/mathnotes/blob/master/m357.pdf" target="_blank">Math 357: Statistics</a></li>
       </ul>
   </ul>
   <center> 
@@ -223,15 +269,36 @@ Moreover, we can derive an equation for the shape of the trajectory in terms of 
     <li><a href="lorentzian-causality-theory.pdf">Building up to Lorentzian Causality Theory (January 2020) [PDF]</a></li>
 </div>
 
+<div id="Sunrises & Art" class="tabcontent">
+<center><h3>Sunrises and Art</h3></center>
+One of my favourite new things is waking up at 4AM and doing physics. Also, a little-known fact about me is that I used to want to be an artist, and still enjoy drawing (although I don't do it much anymore...)
+  <div class="row">
+    <div class="column">
+      <img src="art1.jpg">
+      <img src="art2.jpg">
+    </div>
+    <div class="column">
+      <img src="art3.jpg">
+      <img src="sunrise3.jpg">
+    </div>
+    <div class="column">
+      <img src="sunrise2.jpg">
+      <img src="sunrise.jpg">
+      <img src="sunrise4.jpg">
+    </div>
+  </div>
+</div>
+
+
 <div id="Friends" class="tabcontent">
 <h2>MTL Friends</h2>
 <ul> 
-  <li>Diego Lopez's <a href="https://diegolopez.me/">website</a></li>
-  <li>Gabriela Moisescu's <a href="https://gabrielamp.github.io/?fbclid=IwAR1V2ClmhZYMp8YMuTLeYZ8MrxrukXwM5I578SVyyNjfJGtmqJTqe4hbeA0">website</a></li>
-  <li>Marcel Goh's <a href="https://marcelgoh.github.io/?fbclid=IwAR0NH_sPT8VgfjXU2MWiF31zmVInj6l37JQ_RqBunSGhwKZJXqJLKKJyq6Y">website</a></li>
-  <li>Viet Nguyen's <a href="https://opent03.github.io/">website</a></li>
-  <li>Maia Darmon's <a href="https://maiadd.github.io/?fbclid=IwAR1NHxpDjHZ9h0LDK9UdsJcvymYIMHHyeT3eTvH97-0KPKgC46YTPRBYgro">website</a></li>
-  <li>Anna Bradenberger's <a href="https://abrandenberger.github.io/">website</a></li>
+  <li>Diego Lopez's <a href="https://diegolopez.me/" target="_blank">website</a></li>
+  <li>Gabriela Moisescu's <a href="https://gabrielamp.github.io/?fbclid=IwAR1V2ClmhZYMp8YMuTLeYZ8MrxrukXwM5I578SVyyNjfJGtmqJTqe4hbeA0" target="_blank">website</a></li>
+  <li>Marcel Goh's <a href="https://marcelgoh.github.io/?fbclid=IwAR0NH_sPT8VgfjXU2MWiF31zmVInj6l37JQ_RqBunSGhwKZJXqJLKKJyq6Y" target="_blank">website</a></li>
+  <li>Viet Nguyen's <a href="https://opent03.github.io/" target="_blank">website</a></li>
+  <li>Maia Darmon's <a href="https://maiadd.github.io/?fbclid=IwAR1NHxpDjHZ9h0LDK9UdsJcvymYIMHHyeT3eTvH97-0KPKgC46YTPRBYgro" target="_blank">website</a></li>
+  <li>Anna Bradenberger's <a href="https://abrandenberger.github.io/" target="_blank">website</a></li>
 </ul>
 </div>
 <div id="CV" class="tabcontent">
@@ -253,13 +320,13 @@ You can download my CV <a href="2020cv.pdf">here</a>.
 
 <h2>Research Experience</h2>
 <p><strong><u>Mathematics and Statistics Department Undergrad Research (May 2020 - August 2020)</u></strong>
-  <br>The study of the wave equation in cosmological space-times with random initial conditions under the supervision of <a href="https://www.mcgill.ca/mathstat/linan-chen">Professor Chen</a>, <a href="http://www.math.mcgill.ca/jakobson/">Professor Jakobson</a>, and <a href="http://www.math.mcgill.ca/gantumur/">Professor Tsogtgerel</a>.</p>
+  <br>The study of the wave equation in cosmological space-times with random initial conditions under the supervision of <a href="https://www.mcgill.ca/mathstat/linan-chen" target="_blank">Professor Chen</a>, <a href="http://www.math.mcgill.ca/jakobson/" target="_blank">Professor Jakobson</a>, and <a href="http://www.math.mcgill.ca/gantumur/" target="_blank">Professor Tsogtgerel</a>.</p>
 
 <p><strong><u>Canadian Centre for Computational Genomics (C3G) (May 2019 - August 2019)</u></strong>
   <br>Installed the whole genome shotgun (WGS) sequencing program, MOCAT2, on the lab's computing clusters. Wrote a pipeline to use MOCAT2 to analyze the influence of the gut's microbiome on the development of fibromyalgia. Modified MOCAT2's code to reduce the run-time and RAM usage. We then used this program to analyze 156 samples from patients to determine the influence, if any, of the gut's microbiome on developing fibromyalgia. </p>
 
 <p><strong><u>McGill Space Institute (MSI) (February 2018 - August 2018)</u></strong>
-  <br>Wrote and debugged a Python program to compute light-curves from exoplanets under the supervision of <a href="https://msi.mcgill.ca/~cowan/">Professor Cowan</a>. Light-curves encode information about an exoplanet's atmosphere, which is useful for exocartography (exoplanet mapping). I also attended weekly journal clubs discussing the most recent developments in astrophysics research and volunteered to help run MSI science outreach programs. 
+  <br>Wrote and debugged a Python program to compute light-curves from exoplanets under the supervision of <a href="https://msi.mcgill.ca/~cowan/" target="_blank">Professor Cowan</a>. Light-curves encode information about an exoplanet's atmosphere, which is useful for exocartography (exoplanet mapping). I also attended weekly journal clubs discussing the most recent developments in astrophysics research and volunteered to help run MSI science outreach programs. 
 </p>
 <h2>Talks</h2>
 <p>A Brief Introduction to Ergodic Theory (Seminary on Undergraduate Mathematics in Montreal, January 2020) <a href="SUMM2020(Ergodic Theory).pdf">[PDF]</a>.
