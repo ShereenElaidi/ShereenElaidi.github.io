@@ -11,7 +11,7 @@ body {
     margin-bottom: 0;
   	background-color: #001838;
   	color: white;
-  	font-size: 19px;
+  	font-size: 18px;
 }
 
 h1 {
@@ -107,11 +107,13 @@ a:active {
   text-decoration-line: underline;
 /*  font-weight: bold;*/
   display: inline-block;
+  text-decoration-style: dashed;
 }
 
 .chapter { 
   color: #ffc900;
   text-decoration-line: underline; 
+  text-decoration-style: dashed;
   font-weight: bold; 
   font-size: 25px; 
   text-align: center;
@@ -120,6 +122,7 @@ a:active {
  .subsection {
   color: #ffc900;
   text-decoration-line: underline;
+  text-decoration-style: dashed;
   font-weight: 600;
   font-size: 21px;
  }
@@ -127,9 +130,32 @@ a:active {
  .subsubsection {
   color: #ffc900;
   text-decoration-line: underline;
+  text-decoration-style: dashed;
   font-weight: 600;
   font-size: 19px;
  }
+
+.boxed {
+  border: border-width border-style border-color;
+  border-color: black;
+  border-style: solid;
+  border-width: 1.5px;
+  border-radius: 10px ;
+  -moz-border-radius: 10px ;
+  -webkit-border-radius: 10px ;
+  background-color: #b0cbf7;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  box-shadow: 5px 6px 4px #808080;
+  color: black;
+  margin-right: 3%;
+  margin-left: 3%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+} 
+
 
 button {
   font-family:
