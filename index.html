@@ -272,9 +272,146 @@ The <div class='dfn'>weight</div> of an object is the gravitational force exerte
   <li>If there are multiple bodies, then you need to take the problem apart and draw a free-body diagram for each body.</li>
 </ol>
 <div class='chapter'>Chapter 5: Applying Newton's Laws</div>
+<div class='subsection'>5.3: Friction Forces</div>
+When a body is on a surface, that surface exerts a single contact force on that body. We can resolve this force into its parallel and perpendicular components. The perpendicular component is the normal force \( \mathbf{n} \). The parallel component is the <div class = 'dfn'>friction force</div>, denoted by \( \mathbf{f} \). The direction of the friction force is always opposite to the direction of the relative motion. 
+<br>
+<br>
+There are two types of friction force: 
+<ol>
+  <li><div class='dfn'>Kinetic friction force</div>: denoted \( \mathbf{f}_k \), this is friction that acts when an object is moving along a surface. It has been experimentally verified that:</li>
+  \begin{align}
+    || \mathbf{f_k} || = \mu_k || \mathbf{n} ||
+  \end{align}
+  The <div class='dfn'>coefficient of kinetic friction</div>, denoted \( \mu_k \), is the proportionality constant between the forces. The slippier the surface, the smaller \( \mu_k \) is. It's a dimensionless quantity.
+  <li><div class='dfn'>Static friction force</div>, denoted \(\mathbf{f}_s \), is the friction that acts on an object that is not moving relative to the surface. The maximum value that the static friction force can attain before the object starts moving -- \( ( \mathbf{f}_s )_{\text{max}} \) is proportional to \( || \mathbf{n} || \). \( \mu_s \) is the proportionality factor:
+    \begin{align}
+      || \mathbf{f}_s || \leq ( \mathbf{f}_s )_{\text{max}} = \mu_s || \mathbf{n} ||
+    \end{align}
+    and we call it the <div class='dfn'>Coefficient of static friction</div>.
+  </li>
+</ol>
+The coefficient of static friction is usually greater than the coefficient of kinetic friction.
+
+<div class='subsubsection'>5.3.1: Rolling Friction</div>
+The <div class='dfn'>coefficient of rolling friction</div>, denoted \( \mu_T \), tells us how much easier it is to move something on wheels, as opposted to sliding it. It is given by:
+
+\begin{align}
+  \mu_T = \frac{\text{horizontal force needed for a constant speed on a flat surface}}{\text{upward normal force exerted by the surface}}
+\end{align}
+
+<div class='subsubsection'>5.3.2: Fluid Reistance and Terminal Speed</div>
+<div class='dfn'>Fluid resistance</div> is a force exerted by a fluid on a body which is moving through the fluid. The direction of the fluid resistance force is always opposite the direction of the body's velocity with respect to the fluid. 
+
+<ul>
+  <li>For small objects moving at very low speeds (e.g. dust particles), the fluid resistance force is given by: 
+    \begin{align}
+      \mathbf{f} = k \mathbf{v}
+    \end{align}
+    where \( k \) is a proportionality constant which depends on the shape and size of the body as well as the fluid's properties (e.g. viscosity).</li>
+  <li>For larger objects (e.g. tennis ball), the proportionality constant is called <div class='dfn'>air drag</div>: 
+    \begin{align}
+      || \mathbf{f} || = D || \mathbf{v} ||^2
+    \end{align}
+    where \( D \sim kg/m \).
+  </li>
+</ul>
+The existence of fluid resistance means that objects falling through a fluid do not have constant acceleration, and hence the kinematic equations that we've been using all along are no longer valid. We observe that as speed increases, the resisting force increases until \( mg - kv_y = 0 \). At this point, acceleration becomes zero, and velocity no longer increases, and we attain what is called the <div class='dfn'>terminal speed</div>. We denote this by \(v_t \), and it is given by:
+\begin{align}
+  \mathbf{v}_t = \frac{m \mathbf{g}}{k} 
+\end{align}
+We can obtain expressions for \( \mathbf{v}_y \), \( \mathbf{a}_y \), and \( y \) using Newton's second law: 
+\begin{align}
+  m \frac{d \mathbf{v}_y}{dt} = m \mathbf{g} - k \mathbf{v}_y 
+\end{align}
+This is a differential equation in \( v_y \); solving for this, and then differentiating for acceleration and integrating for position, we obtain:
+\begin{align}
+  \mathbf{v}_y &  = \mathbf{v}_t \left[  1 - e^{-(k/m)t} \right] \\
+  \mathbf{a}_y & = \mathbf{g} e^{(-k/m)t} \\
+  \mathbf{y} & = \mathbf{v}_t \left[  t - \frac{m}{k} \left( 1 - e^{-(k/m)t} \right)  \right]
+\end{align}
+The terminal velocity in the case of \( || \mathbf{f} || = D || \mathbf{v} ||^2 \) is: 
+\begin{align}
+  || \mathbf{v}_t || = \sqrt{ \frac{m || \mathbf{g} ||}{D}}
+\end{align}
+<div class='subsection'>5.4: Dynamics of Circular Rotation</div>
+Recall that the magnitude of the acceleration of an object in unoform circular motion is given by:
+\begin{align}
+   a_{\text{rad}} = \frac{||  \mathbf{v} ||^2}{R}
+\end{align}
+or, equivalently, in terms of the period \( T \): 
+\begin{align}
+  a_{\text{rad}} = \frac{4 \pi^2 R}{T^2}
+\end{align}
+These forces and accelerations are governed by Newton's Second Law, since the particle is accelerating towards the centre, and hence \( \sum \mathbf{F} \) must be directed inwards. If this force is zero, then the particle will fly off in the tangent direction. In uniform circular motion, the magnitude \( || \sum \mathbf{F} || \) is constant since \( || \mathbf{a} || \) is constant. The magnitude of the force \( \mathbf{F}_{\text{net}} \) is hence: 
+\begin{align}
+  || \mathbf{F}_{\text{net}} || = m a_{\text{rad}} = m \frac{|| \mathbf{v} ||^2}{R}
+\end{align}
+Remark: these expressions are valid for any circular arc; we don't require the particle to complete a full circle.
+
+<div class='subsubsection'>5.5: The Fundamental Forces of Nature</div>
+<ol>
+  <li><div class='dfn'>Graviational Interactions</div>: e.g. weight, planets in orbit \( \rightarrow \) Ch. 13</li>
+  <li><div class='dfn'>Electromagnetic Interaction</div>: electric and magnetic fores, e.g. contact forces (e.g. normal force, friction, fluid reistance). </li>
+  <li><div class='dfn'>Strong Interaction</div>: holds the nucleus of an atom together.</li>
+  <li><div class='dfn'>Weak Interaction</div>: responsible for beta decay.</li>
+</ol>
+In the 1960s, the electromagnetic and weak interactions were unified into an ``<div class='dfn'>electroweak interaction</div>.''
+
+
+<div class='chapter'>Chapter 6: Work and Energy</div>
+<div class='subsection'>6.1: Work</div>
+The total work done on a particle by all forces acting on the object will tell us the change in the particle's kinetic energy, a quantitty which is related to the particle's mass and speed. This rule even holds when the force varies.
+
+<div class='boxed'><strong>Work I: </strong>Consider a particle which undergoes a constant displacement, \( || \mathbf{s} || \), in a straight line. Let \( \mathbf{F} \) be the constant force acting upon the particle, parallel to the displacement vector. Then, the <strong>work</strong> \( W \) done on the particle is the product: 
+  \begin{align}
+    W := || \mathbf{F} || || \mathbf{s} ||
+  \end{align}
+We can generalize this to a displacement vector not necessarily parallel to the force vector; in this case, let \( \varphi \) be the angle between \( \mathbf{F} \) and \( \mathbf{s} \). Then, the work is:
+\begin{align}
+  W = || \mathbf{F} || || \mathbf{s} || \cos (\varphi)
+\end{align}
+This is the dot product: 
+\begin{align}
+  W = \mathbf{F} \cdot \mathbf{s} 
+\end{align}
+</div>
+The SI unit for work is the joule \( \sim \) \( N \cdot m \).
+
+<div class='subsection'>6.2: Kinetic Energy and the Work-Energy Theorem</div>
+The <div class='dfn'>kinetic energy</div> of a particle with mass \( m \) and velocity \( \mathbf{v} \) is given by:
+\begin{align}
+  K = \frac{1}{2} m || \mathbf{v} ||^2
+\end{align}
+One can use Newton's Second Law + Kinematic Eqns to derive:
+<div class='boxed'><strong>Work-Energy Theorem:</strong> The work done by the net force on a particle is given by the change in kinetic energy: 
+\begin{align}
+  W_{\text{tot}} = \Delta K 
+\end{align}
+</div>
+Since this theorem is derived using Newton's Second law, it is only valid in intertial reference frames. The Work-Energy theorem is useful when one wants to relate a body's speed \( || \mathbf{v}_1 || \) at one point in the trajectory to its speed \( || \mathbf{v}_2 || \) at another point in its trajectory.
+
+
+<div class='subsubsection'>6.2.1: The Meaning of Kinetic Energy</div>
+The physical interpretation of kinetic energy or a particle is that it's the work required to bring that particle from rest to that speed. An equivalent way to look at kinetic energy is to see it as the work a particle can do as it's brought to rest fro a certain speed.
+
+
+<div class='subsection'>6.3: Work and Energy with Varying Forces</div>
+<div class='boxed'><strong>Work II</strong>: the work done on a particle with a varying x-component of force, \( F_x \), along a straight-line displacement along the x-axis is:
+\begin{align}
+  W = \int_{x_1}^{x_2} F_x dx
+\end{align}
+</div>
+Application: consider a spring which is stretched by an amount \( x \). Then, the force required to stretch the spring is:
+\begin{align}
+  F_x = k x 
+\end{align}
+where \( k \) is called the <div class='dfn'>force constant</div>, \( k \sim N/m \). This observation is known as <div class='dfn'>Hooke's Law</div>.
 
 
 </div>
+
+
+
 
 
 
@@ -413,6 +550,7 @@ One of my favourite new things is waking up at 4AM and doing physics. Also, a li
   <li>Viet Nguyen's <a href="https://opent03.github.io/" target="_blank">website</a></li>
   <li>Maia Darmon's <a href="https://maiadd.github.io/?fbclid=IwAR1NHxpDjHZ9h0LDK9UdsJcvymYIMHHyeT3eTvH97-0KPKgC46YTPRBYgro" target="_blank">website</a></li>
   <li>Anna Bradenberger's <a href="https://abrandenberger.github.io/" target="_blank">website</a></li>
+  <li>Stephen Fay's <a href="https://dcxst.github.io/" target="_blank">website</a></li>
 </ul>
 </div>
 <div id="CV" class="tabcontent">
