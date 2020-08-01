@@ -47,7 +47,7 @@
 
  \[ \Box u = - \frac{1}{S^2} \partial_\tau^2 u - 2 \frac{\dot{S}}{S^3} \partial_\tau u + \frac{1}{S^2} \Delta_\sigma u = 0 \]
 
-  (where \( S \) depends on the <a href = "https://en.wikipedia.org/wiki/Friedmann%E2%80%93Lema%C3%AEtre%E2%80%93Robertson%E2%80%93Walker_metric" target="_blank">Friedmann-Robertson-Walker</a> metric) on various manifolds with random initial conditions. My personal interests include cycling, drawing, and reading.
+  (where \( S \) depends on the <a href = "https://en.wikipedia.org/wiki/Friedmann%E2%80%93Lema%C3%AEtre%E2%80%93Robertson%E2%80%93Walker_metric" target="_blank">Friedmann-Robertson-Walker</a> metric) on various manifolds with random initial conditions. My personal interests include cycling, drawing, and reading. You can find the (highly in-elegant) source code for my webpage <a href="https://github.com/ShereenElaidi/ShereenElaidi.github.io" target="_blank">here</a>. 
   </p>
 </body>
 <br>
@@ -407,8 +407,60 @@ Application: consider a spring which is stretched by an amount \( x \). Then, th
 \end{align}
 where \( k \) is called the <div class='dfn'>force constant</div>, \( k \sim N/m \). This observation is known as <div class='dfn'>Hooke's Law</div>.
 
+<div class='subsubsection'>6.3.1: Work-Energy Theorem for Motion Along a Curve</div>
+We can now generalize the definition to include a force that varies in both magnitude and direction; here, work is defined as a line integral:
 
+<div class='boxed'><strong>Work III:</strong> the work done on a particle by a varying force \( \mathbf{F} \) along a curved path is given by: 
+\begin{align}
+  W = \int_{P_1}^{P_2} \mathbf{F} \cdot \mathbf{d \ell} = \int_{P_1}^{P_2} || \mathbf{F} || \cos (\varphi) d \ell = \int_{P_1}^{P_2} F_{\parallel} d \ell 
+\end{align}
+where \( \varphi \) is the angle between \( \mathbf{F} \) and \( \mathbf{d \ell} \).
 </div>
+
+<div class='subsection'>6.4: Power</div>
+We need a measure of how quickly work is done \( \Rightarrow \) power. The <div class='dfn'>Power</div> is the time rate at which work is done: 
+\begin{align}
+  P := \frac{dW}{dt}
+\end{align} 
+The SI unit is the Watt, denoted \( W \); \( W \sim J/s \). We also have another definition of power:
+\begin{align}
+  P := \mathbf{F} \cdot \mathbf{v}
+\end{align}
+
+<div class='chapter'>Chapter 7: Potential Energy and Energy Conservation</div>
+<div class='subsection'>7.1: Gravitational Potential Energy</div>
+<div class='dfn'>Potential energy</div>: the potential energy associated with the position of a particle. One particular type is <div class='dfn'>Gravitational potential energy</div>, which is the potential energy associated with the body's weight and height above the ground. It is given by: 
+\begin{align}
+  U_{\text{grav}} := mgy 
+\end{align}
+The work done by the gravitational force on a particle is: 
+\begin{align}
+  W = - \Delta U_{\text{grav}}
+\end{align}
+
+<div class='subsubsection'>7.1.1: Conservation of Mechanical Energy (Gravitational Forces Only)</div>
+If only the gravitational force does the work, then the total mechanical energy is conserved: 
+\begin{align}
+  K_1 + U_{\text{grav, 1}} = K_2 + U_{\text{grav, 2}}
+\end{align}
+We call the sum \( E := K + U_{\text{grav}} \) the <div class='dfn'>total mechanical energy</div> of the system. Hence, when only gravity is doing the work,
+\begin{align}
+  E = K + U_{\text{grav}} = c 
+\end{align}
+for \( c \in \mathbb{R} \). Mechanical energy is conserved; this principle is called the <div class='dfn'>conservation of mechanical energy</div>.
+
+<div class='subsubsection'>7.1.2: When Forces Other Than Gravity Do Work</div>
+Let \( W_{\text{other}} \) be the work done by the force \( \mathbf{F}_{\text{other}} \), forces which are not the gravitational force. Then, one has: 
+
+\begin{align}
+  K_1 + U_{\text{grav, 1}} + W_{\text{other}} = K_2 + U_{\text{grav, 2}}
+\end{align}
+
+That is, \( W_{\text{other}} \) is the <i>change in the system's total mechanical energy</i>, \( E = K + U_{\text{grav}} \).
+</div>
+
+
+
 
 
 
@@ -472,10 +524,13 @@ where \( k \) is called the <div class='dfn'>force constant</div>, \( k \sim N/m
     <li><a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw"target="_blank">3Blue1Brown</a></li>
     <li><a href="https://gabriela-ink.web.app/" target="_blank" >Gabriela Ink</a> (Whiteboard for real-time math collaboration [LaTeX rendered with gabdown, drawing coming soon])</li>
     <li><a href="https://www.desmos.com/calculator" target="_blank">Desmos graphing calculator</a></li> 
+    <li><a href="https://cmsa.fas.harvard.edu/2020-big-data-conference/" target="_blank">Harvard 2020 Big Data Conference, 24 August - 25 August 2020</a></li>
+    <ul>
+      <li><a href="https://cmsa.fas.harvard.edu/seminars-and-colloquium/"target="_blank">Applied Math Seminars @ Harvard</a></li>
+    </ul>
   </ul>
   <h3>Other</h3>
   <ul>
-    <li><a href="https://fs.blog/2015/03/carol-dweck-mindset/" target="_blank">Growth mindset</a></li>
     <li>Study music: <a href="https://www.youtube.com/watch?v=kBH-dO68ooA" target="_blank">1</a>, <a href="https://www.youtube.com/watch?v=f0Cv4HZjL5w&list=RDf0Cv4HZjL5w&start_radio=1" target="_blank">2</a>, <a href="https://www.youtube.com/watch?v=Ti50KjZv-i8" target="_blank">3</a>, <a href="https://www.youtube.com/watch?v=ssAI-0KyTGc"target="_blank">4</a>, <a href="https://www.youtube.com/watch?v=LUCKpJEUcNQ&fbclid=IwAR3CDDCbrrJww3THDiAxfJBFqddhhB1pt4pWtz1HevxPqNDsMMdHFhmhHts" target="_blank">5</a>, <a href="https://www.youtube.com/watch?v=W2an9rBP0XM&list=RDLUCKpJEUcNQ&index=2" target="_blank">6</a></li>
     <li><a href="https://www.kipp.org/" target="_blank">KIPP Public Charter Schools</a></li>
   </ul>
