@@ -28,6 +28,13 @@ p {
   margin-bottom: 1%;   
 }
 
+.text {
+  margin-left: var(--margin-size);
+  margin-right: 20%;
+  margin-top: 1%; 
+  margin-bottom: 1%;  
+}
+
 .center {
   width: 50%;
   display: block;
@@ -65,7 +72,6 @@ a:hover {
 a:active {
   color: green;
 }
-
 
  /* Style the tab */
 .tab {
@@ -128,6 +134,10 @@ a:active {
   font-weight: bold; 
   font-size: 25px; 
   text-align: center;
+  margin-left: var(--margin-size);
+  margin-right: var(--margin-size);
+  margin-top: 1%; 
+  margin-bottom: 1%;  
  }
 
  .subsection {
@@ -136,6 +146,10 @@ a:active {
   text-decoration-style: dashed;
   font-weight: 600;
   font-size: 21px;
+/*  margin-left: var(--margin-size);
+  margin-right: var(--margin-size);*/
+  margin-top: 1%; 
+  margin-bottom: 1%;  
  }
 
  .subsubsection {
@@ -144,29 +158,35 @@ a:active {
   text-decoration-style: dashed;
   font-weight: 600;
   font-size: 19px;
+/*  margin-left: var(--margin-size);
+  margin-right: var(--margin-size);*/
+  margin-top: 1%; 
+  margin-bottom: 1%;  
  }
 
 .boxed {
   border: border-width border-style border-color;
   border-color: black;
   border-style: solid;
-  border-width: 3.5px;
+  border-width: 1.5px;
   border-radius: 10px ;
   -moz-border-radius: 10px ;
   -webkit-border-radius: 10px ;
-/*  background-color: #b0cbf7;*/
-  background-color: #ededed;
+  background-color: #b0cbf7;
   padding-top: 1%;
   padding-left: 1%;
   padding-right: 1%;
   padding-bottom: 1%;
-  text-decoration-color: black;
-/*  margin-right: 80%;
+  box-shadow: 5px 6px 4px #808080;
+  color: black;
+/*  margin-right: 3%;
   margin-left: 3%;
   margin-top: 1%;
-  margin-bottom: 80%;*/
-  height: 300px;
-  width: 200px;
+  margin-bottom: 1%;*/
+  margin-left: var(--margin-size);
+  margin-right: var(--margin-size);
+  margin-top: 1%; 
+  margin-bottom: 1%;  
 } 
 
 
@@ -175,6 +195,7 @@ button {
   "Computer Modern Serif";
   font-size: 16px;
   font-weight: bold;
+  background: white; 
 }
 
  /* Container holding the image and the text */
