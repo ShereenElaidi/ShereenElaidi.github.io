@@ -66,6 +66,13 @@ a:active {
   color: green;
 }
 
+#physlink {
+  color: black;
+}
+
+#physlink:hover {
+  color: #505050;
+}
 
  /* Style the tab */
 .tab {

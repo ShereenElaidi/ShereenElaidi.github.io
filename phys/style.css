@@ -127,6 +127,10 @@ a:active {
   text-decoration-style: dashed;
 }
 
+#headlink {
+  color: white;
+}
+
 .chapter { 
   color: #ffc900;
   text-decoration-line: underline; 
@@ -217,7 +221,9 @@ button {
   position: absolute;
   top: 8px;
   left: 16px;
+  font-size: 250%;
 }
+
 
 /* Top right text */
 .top-right {
