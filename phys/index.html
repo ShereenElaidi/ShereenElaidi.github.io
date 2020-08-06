@@ -66,7 +66,7 @@
   x(t) & = x_0 + \int_0^t v(s) ds
   \end{align}
 
-  <center> <h3> Chapter 3: Motion in Two or Three Dimensions </h3> </center></center>
+  <div class='chapter'>Chapter 3: Motion in Two or Three Dimensions</div>
   <div class="subsection">3.1: Position and Velocity Vectors</div>
   For notation, we denote the <div class="dfn">position vector</div> by: 
   \begin{align}
@@ -133,7 +133,7 @@ If the speed varies, then acceleration will also have a tangential component:
 
 <div class="subsection">3.5: Relative Velocity</div>
 The <div class="dfn">relative velocity</div> is the velocity of a particular observer relative to that observer. 
-<h5>3.5.1: Relative Velocity in One Direction</h5>
+<div class='subsubsection'>3.5.1: Relative Velocity in One Direction</div>
 A <div class="dfn">Frame of Reference</div> is an observer equipped with a meter-stick and stop-watch. Notation: let \( P \) be a point, and let \( A \) and \( B \) be reference frames. Then, \( x_{P/A} \) will denote the position of \( P \) relative to the reference frame \( A \). Moreover, the position of the origin of \( B \) with respect to the origin of \( A \) is \( x_{B/A} \). We thus have:
 \begin{align}
   x_{P / A} & = x_{P / B} + x_{B/A} \\
@@ -489,6 +489,66 @@ An <div class='dfn'>energy diagram</div> is a graph that shows the potential ene
 </ol>
 
 <div class='chapter'>Chapter 8: Momentum, Impulse, and Collisions</div>
+<div class='subsection'>8.0: Introduction and Motivation</div>
+A key part of Newtonian mechanics is the conservation of momentum; this allows us to study situations that may be very difficult to analyze with Newton's Laws. In particular, the conservation of momentum is valid in situations where Newton's Laws are not valid. We use this principle when studying collision problems and problems with changing masses. 
+
+<div class='subsection'>8.1: Momentum and Impulse</div>
+We'll see another useful way to re-state \( \mathbf{F} = m \mathbf{a} \), as we did by previously re-stating it as the Work-Energy theorem. 
+
+<div class='subsubsection'>8.1.1: Newton's Second Law in terms of Momentum</div>
+We can write Newton's second law as,
+\begin{align}
+  \sum \mathbf{F}_i = \frac{d}{dt} [ m \mathbf{v} ]
+\end{align}
+The <div class='dfn'>momentum</div> or <div class='dfn'>linear momentum</div> of a particle is defined as:
+\begin{align}
+  \mathbf{p} = m \mathbf{v}
+\end{align}
+It's SI unit is \( kg \times m/s \). We can re-formulate Newton's Second Law in terms of momentum:
+\begin{align}
+  \sum \mathbf{F}_i = \frac{d \mathbf{p}}{dt}
+\end{align}
+This is only valid in intertial reference frames. 
+
+<div class='subsubsection'>8.1.2: Impulse-Momentum Theorem</div>
+<strong>Question</strong>: What is the physical difference between momentum and kinetic energy? We can answer this question by introducing the concept of <i>impulse</i>. The <div class='dfn'>impulse</div> of a constant net force \( \sum \mathbf{F}_i \) during some time interval \( \Delta t := [t_1, t_2] \) is defined as: 
+
+\begin{align}
+  \mathbf{J} := \sum \mathbf{F} ( t_2 - t_1) = \sum \mathbf{F} \Delta t
+\end{align}
+
+Its SI unit is \( N \cdot s \sim kg \times m/s \).
+
+<div class='boxed'><strong>Impulse-Momentum Theorem (Constant Forces)</strong>: The impulse of a net force on a particle during a time interval is given by:
+\begin{align}
+  \mathbf{J} = \mathbf{p_1}  - \mathbf{p_2} = \Delta \mathbf{p}
+\end{align}
+For <strong>non-constant forces</strong>, we have: 
+\begin{align}
+  \mathbf{J} = \int_{t_1}^{t_2} \sum \mathbf{F}_i dt 
+\end{align}
+</div>
+We can also use the average net force: 
+\begin{align}
+  \mathbf{J} = \mathbf{F}_{\text{avg}} (t_2 - t_1)
+\end{align}
+
+<div class='subsubsection'>8.1.3: Momentum and Kinetic Energy Compared</div>
+On one hand, we have the impulse-momentum theorem,
+\begin{align}
+  \mathbf{J} = \mathbf{p}_1 - \mathbf{p}_2 
+\end{align}
+which gives us the changes in a particle's momentum due to impulse. This depends on the <i>time</i> over which the net force acts. On the other hand, we have the work-energy theorem,
+\begin{align}
+  W_{\text{tot}} = K_2 - K_1 
+\end{align} 
+which gives us changes in the particle's kinetic energy due to work. This depends on the <i>distance</i> over which the net force acts. The physical meaning behind all of this is: 
+<ul>
+  <li>Momentum is the impulse that accelerated a particle from rest to its present speed</li>
+  <li>Kinetic energy is the total work done to a particle to accelerate it from rest</li>
+</ul>
+The impulse-momentum theorem and the work-energy theorem are examples of <i>integral principles</i>, principles which relate the motion of two different times separated by some finite time-interval. Conversely, Newton's Second Law is an example of a <i>differential principle</i>, which relates the rate of change of the velocity or momentum to the force. 
+
 
 
 </div>
