@@ -9,9 +9,9 @@ body {
     margin-right: 0;
     margin-top: 0; 
     margin-bottom: 0;
-  	background-color: #001838;
-  	color: white;
-  	font-size: 18px;
+  	background-color: white;
+  	color: black;
+  	font-size: 19px;
 }
 
 h1 {
@@ -55,7 +55,7 @@ code {
 }
 
 a:link {
-  color: green;
+  color: blue;
 }
 
 /* visited link */
@@ -120,9 +120,9 @@ a:active {
 
 /* Use this for in-line definitions. */
 .dfn {
-  color: #b0cbf7;
+  color: #001838;
   text-decoration-line: underline;
-/*  font-weight: bold;*/
+  font-weight: bold;
   display: inline-block;
   text-decoration-style: dashed;
 }
@@ -132,11 +132,12 @@ a:active {
 }
 
 .chapter { 
-  color: #ffc900;
-  text-decoration-line: underline; 
-  text-decoration-style: dashed;
+/*  color: #001838;*/
+  color: black;
+/*  text-decoration-line: underline; */
+/*  text-decoration-style: dashed;*/
   font-weight: bold; 
-  font-size: 25px; 
+  font-size: 26px; 
   text-align: center;
   margin-left: var(--margin-size);
   margin-right: var(--margin-size);
@@ -145,11 +146,12 @@ a:active {
  }
 
  .subsection {
-  color: #ffc900;
-  text-decoration-line: underline;
-  text-decoration-style: dashed;
+/*  color: #001838;*/
+  color: black;
+/*  text-decoration-line: underline;*/
+/*  text-decoration-style: dashed;*/
   font-weight: 600;
-  font-size: 21px;
+  font-size: 22px;
 /*  margin-left: var(--margin-size);
   margin-right: var(--margin-size);*/
   margin-top: 1%; 
@@ -157,11 +159,12 @@ a:active {
  }
 
  .subsubsection {
-  color: #ffc900;
-  text-decoration-line: underline;
-  text-decoration-style: dashed;
+/*  color: #001838;*/
+  color: black;
+/*  text-decoration-line: underline;*/
+/*  text-decoration-style: dashed;*/
   font-weight: 600;
-  font-size: 19px;
+  font-size: 20px;
 /*  margin-left: var(--margin-size);
   margin-right: var(--margin-size);*/
   margin-top: 1%; 
