@@ -616,6 +616,47 @@ We can re-write this to obtain the total momentum of the system,
 \end{align}
 Hence, <i>the total momentum \( P \) of a system equals the total mass times the velocity of the centre of mass</i>. Observe: for a system of particles with zero net force, then we know by Newton's Second Law that this implies that \( P \) is constant. By the above, this implies that the velocity of the centre of mass is constant.
 
+<div class='subsubsection'>8.5.2: External Forces and Centre of Mass Motion</div>
+Similarly, the acceleration of the centre of mass is given by,
+\begin{align}
+  M \mathbf{a}_{\text{cm}} = m_1 \mathbf{a}_1 + m_2 \mathbf{a}_2 + ... 
+\end{align}
+By Newton's Second Law (\( M \mathbf{a}_{\text{cm}} = \sum \mathbf{F} \)) and by Newton's Third Law, one has:
+\begin{align}
+  \sum \mathbf{F}_{\text{ext}} = M \mathbf{a}_{\text{cm}}.
+\end{align}
+Here, \(  \sum \mathbf{F}_{\text{ext}} \) is the net external force on a body of a collection of particles, \( M \) is the total mass of the collection of particles, and \( \mathbf{a}_{\text{cm}} \) is the acceleration of the centre of mass. What this means: when a body or a collection of paticles is acted upon by external forces, the centre of mass moves as if all the mass is concentrated at the centre of mass and as if the net force equal to the sum of the sum of the external forces acts on the centre of mass. We've been using this property all along, and we will extensively use it in Chapter 10 when studying motion of rigid bodies. Hence, for an extended body or a system of particles, 
+\begin{align}
+  \sum \mathbf{F}_{\text{ext}} = \frac{d\mathbf{P}}{dt} 
+\end{align}
+
+
+<div class='chapter'>Chapter 9: Rotation of Rigid Bodies</div>
+<strong>Motivation</strong>: we need to develop methods for analyzing the motion of a rotating body. A <div class='dfn'>rigid body</div> is an idealized body that has a perfectly definite and unchanging shape and size, i.e., we ignore the fact that forces can deform real-world bodies. 
+
+<div class='subsection'>9.1: Angular Velocity and Acceleration</div>
+We will first study a rigid body that rotates about a fixed axis. A fixed axis is one that is at rest in some inertial reference frame and does not change direction relative to that frame. We'll use a more convenient coordinate system (rather than the Cartesian coordinate system) in this segment: we'll specify the location of a particle with the angle \( \theta \) that the position vector of the rotation body makes with the positive x-axis. We call this the <div class='dfn'>angular coordiante</div> and it uniquely describes the motion. 
+
+The most natural unit for \( \theta \) is not in degrees but rather than radians. For an angle \( \theta \) subtended by an arc of length \( s \) on a circle of radius \( r \), we have: 
+\begin{align}
+  \theta = \frac{s}{r} 
+\end{align}
+for \( \theta \) measured in radians. We have the following conversion between radians and degrees: \( 1 \) rad \( = 57.3 \) degrees. 
+
+<div class='subsubsection'>9.1.1: Angular Velocity</div>
+The <div class='dfn'>average angular velocity</div> for a body rotating about the z-axis, denoted \( \omega_{\text{z, avg}}) \) is the ratio of the angular displacement to \( \Delta t \):
+
+\begin{align}
+  \omega_{\text{avg, z}} := \frac{\Delta \theta}{\Delta t}
+\end{align}
+The <div class='dfn'>instantaneous angular velocity</div> is defined as: 
+\begin{align}
+  \omega_z := \frac{d \theta}{d t}
+\end{align}
+We have the following conversions: 
+\begin{align}
+  1 \text{rev/s} = 2 \pi \text{rad/s} \hspace{1cm} 1 \text{rev/min} = 1 \text{rpm} = \frac{2 \pi}{60} \text{rad/sec}
+\end{align}
 </div>
 </body>
 <hr> 

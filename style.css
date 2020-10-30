@@ -2,6 +2,19 @@
   --margin-size: min(100px, 7.5vw);
 }
 
+.mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 730px) {
+  .mobile{
+    display: block;
+  }
+  .desktop{
+    display: none;
+  }
+}
+
 
 body {
 	font-family: "Computer Modern Serif", serif;
@@ -273,6 +286,7 @@ button {
     flex: 100%;
     max-width: 100%;
   }
+
 }
 
 
