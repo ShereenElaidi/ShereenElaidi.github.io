@@ -22,7 +22,7 @@ body {
     margin-right: 0;
     margin-top: 0; 
     margin-bottom: 0;
-  	background-color: #001838;
+  	background-color: #242642;
   	color: white;
   	font-size: 18px;
 }
@@ -31,7 +31,16 @@ h1 {
   margin-left: var(--margin-size);
   margin-right: var(--margin-size);
   margin-top: 1%; 
-  margin-bottom: 1%;  
+  margin-bottom: 1%;
+  font-variant: small-caps;  
+}
+
+h2 {
+  font-variant: small-caps;
+}
+
+h3 {
+  font-variant: small-caps; 
 }
 
 p {
@@ -40,6 +49,8 @@ p {
   margin-top: 1%; 
   margin-bottom: 1%;   
 }
+
+
 
 .center {
   width: 50%;
@@ -107,6 +118,7 @@ a:active {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+  font-variant: small-caps;
 
 }
 
@@ -241,6 +253,7 @@ button {
   transform: translate(-50%, -50%);
   font-size: 400%;
   margin: 0 auto; 
+  font-variant: small-caps;
 } 
 
 .centered2 {
@@ -251,6 +264,7 @@ button {
   transform: translate(-50%, -50%);
   font-size: 200%;
   margin: 0 auto; 
+  font-variant: small-caps;
 } 
 
 .row {

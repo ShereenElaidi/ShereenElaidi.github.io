@@ -59,13 +59,12 @@
 <!-- Tab Links for Projects --> 
 <div class="tab">
   <button class="tablinks" onclick="openProject(event, 'Research')" id="defaultOpen">Research</button>
-  <button class="tablinks" onclick="openProject(event, 'EigenLearn')">EigenLearn</button>
   <button class="tablinks" onclick="openProject(event, 'Links')">Links</button>
   <button class="tablinks" onclick="openProject(event, 'Class Notes')">Class Notes & Expository Writing</button>
   <button class="tablinks" onclick="openProject(event, 'Friends')">MTL Friends</button>
   <button class="tablinks" onclick="openProject(event, 'CV')">CV</button>
   <button class="tablinks" onclick="openProject(event, 'Sunrises & Art')">Sunrises & Art</button>
-  <button class="tablinks" onclick="openProject(event, 'Physics')">Physics</button>
+<!--   <button class="tablinks" onclick="openProject(event, 'Physics')">Physics</button> -->
 </div>
 
 <!-- Tab content -->
@@ -79,10 +78,6 @@
  \[ \Box u = - \frac{1}{S^2} \partial_\tau^2 u - 2 \frac{\dot{S}}{S^3} \partial_\tau u + \frac{1}{S^2} \Delta_\sigma u = 0 \]
 
   (where \( S \) depends on the <a href = "https://en.wikipedia.org/wiki/Friedmann%E2%80%93Lema%C3%AEtre%E2%80%93Robertson%E2%80%93Walker_metric" target="_blank">Friedmann-Robertson-Walker</a> metric) on various manifolds with random initial conditions. 
-<h2>Summer 2019</h2>
-Fibromyalgia...
-<h2>Summer 2018</h2>
-Exoplanets...
 </div>
 <div id="Physics" class="tabcontent">
   <h2>Physics</h2>
@@ -105,37 +100,6 @@ Exoplanets...
 <br>
 </div>
 
-
-<div id="EigenLearn" class="tabcontent">
-  <h2>\(\mathbb{E}\text{igen}\mathcal{L}\text{earn}\)</h2>
-  In progress (v1.2.0): a hybrid of <a href="https://diegolopez.me/rosies-dream/" target="_blank">Rosie's Dream</a> and Anki -- <a href=" https://shereenelaidi.github.io/eigenlearn/" target="_blank">EigenLearn</a>. EigenLearn renders \( \LaTeX \) using <a href="https://github.com/gabrielamp/gabdown" target="_blank">gabdown</a>.  
-  <br>
-  <br>
-  How do you use this? When you open the link, there will be a sample set of questions written in gabdown. Unless you are on mobile, the default mode is ``edit'', which should look like this: 
-  <br>
-  <center>
-  <img class="center" src="ELedit.jpg" alt="el">
-  </center>
-  <br>
-  Write your questions using gabdown (for documentation, see <a href="https://github.com/gabrielamp/gabdown" target="_blank">here</a>). To add a question, add the following code: 
-  <br>
-  <br>
-  <code>
-    &ltquestion-env&gt Precisely state the **Spectral Theorem for compact self-adjoint operators**.
-    &lt/question-env&gt
-  </code>
-  <br>
-  <br>
-  There are two other modes: you can view all the cards simultaneously using ``View all questions'' and you can take a quiz using ``Quizze Mode.'' 
-  <br>
-  <br> 
-  Ideas for v1.3.0+: We are looking to eventually incorporate some form of a spaced-repetition algorithm, allow users to upload their questions as gabdocs, and more. We also want to fix some UI issues, such as the arrows for quiz mode being visible on the edit and view cards modes. 
-  <h3>Gabdown Files</h3>
-  To use, for now, just paste the contents of the <code>.gd</code> file into the text box of the ``edit'' mode. The default for now is Math 454, more to come later. 
-  <br>
-  <br>
-  <a href="math454.gd.js">Math 454 (Analysis III)</a>
-</div>
 
 <div id="Links" class="tabcontent"> 
   <center>
@@ -164,18 +128,8 @@ Exoplanets...
     <li><a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw"target="_blank">3Blue1Brown</a></li>
     <li><a href="https://gabriela-ink.web.app/" target="_blank" >Gabriela Ink</a> (Whiteboard for real-time math collaboration [LaTeX rendered with gabdown, drawing coming soon])</li>
     <li><a href="https://www.desmos.com/calculator" target="_blank">Desmos graphing calculator</a></li> 
-    <li><a href="https://cmsa.fas.harvard.edu/2020-big-data-conference/" target="_blank">Harvard 2020 Big Data Conference, 24 August - 25 August 2020</a></li>
-    <ul>
-      <li><a href="https://cmsa.fas.harvard.edu/seminars-and-colloquium/"target="_blank">Applied Math Seminars @ Harvard</a></li>
-    </ul>
     <li><a href="https://github.com/ShereenElaidi" target="_blank">Github</a>
   </ul>
-  
-  <center>
-    COVID-19 tracker:
-    <br>
-  <iframe src="https://covidactnow.org/embed/us/" title="CoVid Act Now" width="400" height="440" frameBorder="0" scrolling="no"></iframe>
-  </center>
 </div>
 
 <div id="Class Notes" class="tabcontent">
@@ -224,8 +178,6 @@ Exoplanets...
 </div>
 
 <div id="Sunrises & Art" class="tabcontent">
-<center><h3>Sunrises and Art</h3></center>
-I like waking up at 4AM and doing physics and watching the sunrise. Also, I used want to be an artist, here is some of my art. 
   <div class="row">
     <div class="column">
       <img src="art1.jpg">
