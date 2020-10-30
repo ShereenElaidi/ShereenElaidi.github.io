@@ -73,11 +73,13 @@ code {
 
 a:link {
   color: #DB6E65;
+  text-decoration: none;
 }
 
 /* visited link */
 a:visited {
   color: #DB6E65;
+  text-decoration: none;
 }
 
 /* mouse over link */
@@ -88,6 +90,7 @@ a:hover {
 /* selected link */
 a:active {
   color: #DB6E65;
+  text-decoration: none;
 }
 
 #physlink {
