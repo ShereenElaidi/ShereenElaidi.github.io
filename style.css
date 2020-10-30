@@ -61,22 +61,22 @@ code {
 }
 
 a:link {
-  color: green;
+  color: #DB6E65;
 }
 
 /* visited link */
 a:visited {
-  color: green;
+  color: #DB6E65;
 }
 
 /* mouse over link */
 a:hover {
-  color: red;
+  color: #DB6E65;
 }
 
 /* selected link */
 a:active {
-  color: green;
+  color: #DB6E65;
 }
 
 #physlink {
