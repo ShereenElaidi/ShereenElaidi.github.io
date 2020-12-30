@@ -90,12 +90,12 @@ html {
 }
 
 /* Global */
-html{
-/*  margin: 3%; */
+html, body {
+  /*  margin: 3%; */
   height: calc(100vh - 8em);
-/*  padding: 4em;*/
+  /*  padding: 4em;*/
   color: white;
-  font-family: 'Roboto'; 
+  font-family: 'Roboto';font-size: 22px;
 }
 
 /* make the size of the katex smaller */
@@ -159,6 +159,11 @@ ul {
   background: none; 
   padding: 0px 0;
   top: 0px;
+}
+
+a.header-text {
+  font-size: 18px;
+  color: #8892b0;  
 }
 
 
