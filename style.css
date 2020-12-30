@@ -109,7 +109,7 @@ html{
   }
 }
 
-h1 {
+header {
   font-size: 55px; 
   color: #e6f1ff;  
   /* color: black;  */
@@ -140,4 +140,8 @@ a {
   opacity: 1;
   text-decoration: none; 
   font-size:19px; 
+}
+
+ul {
+  list-style-type: none;
 }
