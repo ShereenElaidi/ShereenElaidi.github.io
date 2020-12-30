@@ -148,7 +148,7 @@ ul {
 
 .fixed-footer{
   width: 100%;    
-  background: #0a192f; 
+  background: none; 
   padding: 10px 0;
   bottom: 0;
 }
@@ -165,6 +165,11 @@ a.header-text {
   font-size: 18px;
   color: #8892b0;  
 }
+
+a:hover {
+  color: #00cb9a; 
+}
+
 
 
 
