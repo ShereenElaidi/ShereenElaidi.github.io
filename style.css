@@ -10,6 +10,11 @@ html {
 
 .container {
   padding: 0%; 
+  margin-top: 1.1vw; 
+  margin-left: 18vw; 
+  margin-right: 18vw; 
+  margin-bottom: 25px;
+  line-height: 1.3; 
 }
 
 /* grid: class notes */
@@ -86,16 +91,11 @@ html {
 
 /* Global */
 html{
-  margin: 3%; 
+/*  margin: 3%; */
   height: calc(100vh - 8em);
-  padding: 4em;
+/*  padding: 4em;*/
   color: white;
   font-family: 'Roboto'; 
-  margin-top: 1vw; 
-  margin-left: 11vw; 
-  margin-right: 11vw; 
-  margin-bottom: 25px;
-  line-height: 1.3; 
 }
 
 /* make the size of the katex smaller */
@@ -145,3 +145,22 @@ a {
 ul {
   list-style-type: none;
 }
+
+.fixed-footer{
+  width: 100%;    
+  background: #0a192f; 
+  padding: 10px 0;
+  bottom: 0;
+}
+
+.fixed-header{
+  width: 100%;  
+  position: fixed;    
+  background: #0a192f; 
+  padding: 0px 0;
+  top: 1px;
+}
+
+
+
+
