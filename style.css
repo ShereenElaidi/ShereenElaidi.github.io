@@ -9,7 +9,7 @@ html {
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .container {
-  padding: 0%; 
+  padding: 0; 
   margin-top: 1.1vw; 
   margin-left: 18vw; 
   margin-right: 18vw; 
@@ -156,9 +156,9 @@ ul {
 .fixed-header{
   width: 100%;  
   position: fixed;    
-  background: #0a192f; 
+  background: none; 
   padding: 0px 0;
-  top: 1px;
+  top: 0px;
 }
 
 
