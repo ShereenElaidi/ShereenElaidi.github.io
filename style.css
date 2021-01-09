@@ -89,6 +89,14 @@ html {
   text-align: center;
 }
 
+.notes-9 {
+  grid-column-start:  3;
+  grid-coumn-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  text-align: center;
+}
+
 /* Global */
 html, body {
   /*  margin: 3%; */
