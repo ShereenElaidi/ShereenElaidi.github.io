@@ -12,11 +12,70 @@ body {
     "wdth" 100;
   background-color: #DEE1E0;
 }
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+/* shamelessly stole this code to make tabs from a w3schools tutorial*/
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: inherit; 
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
 </style>
 <body>
 	<center>
-	<h1 style="background-color:#C6C098; color:#45220D">Shereen Elaidi's Art</h1>
-	<p style="color:#45220D">Welcome to my website. Here is some of my art. Everything is done with coloured pencils.</p>
+	<h1 style="background-color:#C6C098; color:#45220D">Shereen Elaidi's Website</h1>
+</center>
+	
+
+
+	<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Professional')">Professional</button>
+  <button class="tablinks" onclick="openCity(event, 'Art')">Art</button>
+  <button class="tablinks" onclick="openCity(event, 'Recipes')">Recipes</button>
+</div>
+
+<div id="Professional", class = "tabcontent">
+	<h3 style="color:#1B4C11">Professional</h3>
+	<p>I am a PhD student at McGill University studying mathematics. Previously, I completed my B.A. at McGill University in mathematics with a minor in computer science.</p>
+</div>
+
+<div id = "Art", class = "tabcontent">
+	<h3 style="color:#1B4C11">Art</h3>
+	<p style="color:#45220D">Here is some of my art. Everything is done with coloured pencils.</p>
+	<center>
 	<h3 style="color:#1B4C11">Nefertiti, June 2024</h3>
 	<img src="images/nefertiti-june-2024.jpeg", style="width:600px;height:800px;"> 
 
@@ -35,5 +94,175 @@ body {
 	<h3 style="color:#1B4C11">Sherlock Holmes, April 2014</h3>
 	<img src="images/sherlock-april-2014.png", style="width:600px;height:800px;">
 	</center>
+</div>
+
+<div id="Recipes", class = "tabcontent">
+	<h3 style="color:#1B4C11">Recipes and Food</h3>
+	<p style="color:#45220D">Below are some of my favourite recipes not from cookbooks (either made myself, from friends, or from family). For cookbooks, <a href="https://www.themediterraneandish.com/">The Mediterranean Dish</a> and <a href = "https://www.renaud-bray.com/Livres_Produit.aspx?id=3509642&def=Filles+Fattoush+%3a+la+cuisine+syrienne%2c+une+cuisine+de+coeur(Les)%2cTARZIBACHI%2c+ADELLE%2c9782924965498">Le Filles Fattoush</a> are some of my favourites for Middle Eastern and Mediterranean cooking.</p>
+
+	<h3 style="color:#1B4C11">Italian summer soup</h3>
+	<h4>Ingredients:</h4>
+	<ol>
+		<li>2 chopped onions</li>
+		<li>2 chopped carrots</li>
+		<li>4 chopped celery sticks</li>
+		<li>1 tsp olive oil</li>
+		<li>2 tsp sugar</li>
+		<li>4 crushed garlic cloves</li>
+		<li>2 bay leaves</li>
+		<li>3 chopped courgettes</li>
+		<li>Chopped tomatoes</li>
+		<li>Vegetable or chicken stock</li>
+		<li>(optional) pasta</li>
+		<li>(optional) fresh basil</li>
+		<li>(optional) chicken</li>
+	</ol>
+	<h4>Directions:</h4>
+	<ol>
+    <li>Cook onion, carrots, and celery for 20 min in the olive oil.</li>
+    <li>Add the sugar, garlic, herbs, and courgetts, and cook for 4-5 min.</li>
+    <li>Add tomatoes, chicken (this should already be cooked), and stock.</li>
+    <ol>
+      <li>Freeze now if making the soup for meal prep</li>
+    </ol>
+    <li>Add pasta. Let it simmer for 6-8 min.</li>
+  </ol>
+
+  <h3 style="color:#1B4C11">Tabbouleh</h3>
+  <h4>Ingredients:</h4>
+  <ol>
+    <li>2 bunches of flat Italian parsley</li>
+    <li>2 large tomatoes</li>
+    <li>1 lemon</li>
+    <li>1/4 cup bulgur</li>
+    <li>1 green onion</li>
+    <li>1 bunch of mint with leaves removed from the stem</li>
+    <li>Olive Oil</li>
+    <li>Salt and pepper</li>
+    <li>(optional) 1 diced red onion for a sweet taste</li>
+  </ol>
+  <h4>Directions:</h4>
+  <ol>
+    <li>Chop the parsley very finely.</li>
+    <li>Measure out 1/4 cup of bulgur and soak it in the lemon juice from one half of the lemon.</li>
+    <li>Chop the green onion and mint very finely and add.</li>
+    <li>Dice the tomatoes and add.</li>
+    <li>Combine the parsley, onion, tomatoes, mint, and bulgur into a bowl.</li>
+    <li>Add olive oil, salt, and pepper to taste. Squeeze the remaining half of the lemon onto the salad. Mix everything together.</li>
+  </ol>
+
+<h3 style="color:#1B4C11">Bread</h3>
+
+  <h4>Ingredients:</h4>
+  <ol>
+    <li>2 1/4 cups of warm water</li>
+    <li>1 1/2 tablespoon of sugar</li>
+    <li>1 tablespoon of instant yeast</li>
+    <li>2 tablespoons salt</li>
+    <li>2 tablespoons oil</li>
+    <li>5 1/2 - 6 cups of flour</li>
+  </ol>
+  <h4>Directions:</h4>
+  <ol>
+    <li>In a bowl, combine the warm water, sugar, and yeast. Let the yeast sit for 3-5 min until it's foamy.</li>
+    <li>Add salt, oil, and 3 cups of flour to the yeast. Mix for 1-2 min (until it starts to combine).</li>
+    <li>Ad the remaining 2 1/2 - 3 cups of flour, 1/2 a cup at a time, until the dough leaves less residue.</li>
+    <li>Knead the ough for 2-3 min until it's smooth.</li>
+    <li>Let the dough rest for 5 min.</li>
+    <li>Knead again for 1-2 min.</li>
+    <li>Transferr the dough to a large, lightly greased bowl. Cover it with a towl.</li>
+    <li>Let the dough rise in a warm place for approx 1 hour until it doubles in size.</li>
+    <li>Divide the dough into 2 equal rectanges.</li>
+    <li>Cover it with the towl again, and let it rise again for 35 - 45 min.</li>
+    <li>Cut dashes into the top of the dough.</li>
+    <li>Bake in the oven @ 190 degrees C for 25-30 min until it's lightly brown.</li>
+  </ol>
+
+  <h3 style="color:#1B4C11">Rice & Ground Beef </h3>
+  This one can probably be made vegetarian by substituting the beef with beans, but I have yet to try this one. 
+  <h4>Ingredients:</h4>
+  <ol>
+    <li>1 lb ground beef (~0.5 kg)</li>
+    <li>1 Onion</li>
+    <li>7 Arabic Spices</li>
+    <li>1 teaspoon cardamon</li>
+    <li>1 teasponn cinnamon</li>
+    <li>Salt</li>
+    <li>Black pepper</li>
+    <li>Almonds</li>
+    <li>(optional) Pine nuts if you'd like to treat yourself [expensive]</li>
+    <li>Olive Oil</li>
+    <li>Egyptian rice (any medium grain rice works)</li>
+    <li>2 cubes of maggie chicken broth </li>
+  </ol>
+  <h4>Directions:</h4>
+  <ol>
+    <li>Add oil to a pot and fry the almonds in the pot until they're golden. Take them out and put them on a plate with paper until the end.</li>
+    <li>Cut the onion very finely. Using the same oil as in step 1, saute the onion until it's slighly red.</li>
+    <li>Add ground beef to the pot with the oil and onions. Mix, and saute until it's slightly cooked.</li>
+    <li>Add all the spices and the maggie cubes into the mix. Mix it all together.</li>
+    <li>Add the rice, and mix everything together.</li>
+    <li>Add water & cover until cooked. </li>
+  </ol>
+
+
+  <h3 style="color:#1B4C11">Tomato Sauce</h3>
+  <h4>Ingredients:</h4>
+  <ol>
+    <li>2 Tomatoes</li>
+    <li>Garlic</li>
+    <li>Dry oregano</li>
+    <li>Salt & Pepper</li>
+    <li>Nutmeg</li>
+    <li>1 cube of sugar</li>
+    <li>Basil</li>
+    <li>Maggie Chicken broth cube</li>
+    <li>1 can of tomato paste</li>
+  </ol>
+  <h4>Directions:</h4>
+  <ol>
+    <li>Chop the onions and garlic, and let it simmer in olive oil. Add dry oregano.</li>
+    <li>Add water to the desired amount of sauce.</li>
+    <li>Grate two tomatoes and add into the pot with onions and garlic.</li>
+    <li>Add 1 can of tomato paste. Mix everything together.</li>
+    <li>Add salt, pepper, nutmeg, and a little sugar. Optional: add pepper, basil, and maggie chicken broth.</li>
+    <li>Mix and leave the sauce in the pot until it thickens.</li>
+  </ol>
+
+  <h3 style="color:#1B4C11">Lazy Cake</h3>
+  <h4>Ingredients:</h4>
+  <ol>
+  	<li>2 cups of Nesquik chocolate powder</li>
+  	<li>1 tablespoon of coca powder</li>
+  	<li>14 tablespoons of unsalted butter</li>
+  	<li>Milk to taste</li>
+  	<li>6 packs of tea biscuits</li>
+  </ol>
+  <h4>Directions:</h4>
+  <ol>
+  	<li>Melt the butter in the microwave. Combine the chocolate powder, coca powder, and the melted butter together.</li>
+  	<li>Add the milk until the chocolate is the desired taste.</li>
+  	<li>Break the tea biscuits up by hand into small pieces, and add them to the chocolate mix in stages, mixing it all together.</li>
+  	<li>Put the mixture on pieces of wax paper and roll them up into salami shapes. Place them in the freezer for 2-3 hours, or overnight, until frozen.</li>
+  	<li>Cut them into slices.</li>
+  </ol>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
 </body>
 </html>
